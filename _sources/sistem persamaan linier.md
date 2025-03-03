@@ -20,21 +20,19 @@ sistem persamaan linear yang di ubah menjadi bentuk matriks, matriks tersebut la
 
 Selesaikan sistem persamaan linier berikut :
  
- x+y+z= 6
-2x+2y+3z= 14
-3x+4y+2z= 13
+    x + y + z = 6
+    2x + 2y + 3z = 14
+    3x + 4y + 2z = 13
 
 Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas menggunakan metode eliminasi Gauss.
 
 1. langkah pertama 
 
-Hasil Matriksnya : 
+  Hasil Matriksnya : 
 
-$\begin{bmatrix}
-1 & 1 & 1 & | 6 \\
-2 & 2 & 3 & | 14 \\
-3 & 4 & 2 & | 13
-\end{bmatrix}$
+    1  1  1  | 6 
+    2  2  3  | 14 
+    3  4  2  | 13
 
 
 2. langkah kedua
@@ -45,73 +43,63 @@ $\begin{bmatrix}
 
   $𝑅_2→𝑅_2−2𝑅_1$
   
-  hasil matriksnya : 
+hasil matriksnya : 
   
-  $\begin{bmatrix}
-1 & 1 & 1 & | 6 \\
-0 & 0 & 1 & | 2 \\
-3 & 4 & 2 & | 13
-\end{bmatrix}$
+    1  1  1  | 6 
+    0  0  1  | 2 
+    3  4  2  | 13
   
   $𝑅_3→𝑅_3−3𝑅_1$
   
-  hasil matriksnya : 
+hasil matriksnya : 
   
-  $\begin{bmatrix}
-1 & 1 & 1 & | 6 \\
-0 & 0 & 1 & | 2 \\
-0 & 1 & -1 & | -5
-\end{bmatrix}$
-  
+    1  1  1 | 6 
+    0  0  1 | 2 
+    0  1  -1 | -5
+
   
 - Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:
 
   $𝑅_2→𝑅_2+𝑅_3$
   
-  hasil matriksnya : 
+hasil matriksnya : 
   
-  $\begin{bmatrix}
-1 & 1 & 1 & | 6 \\
-0 & 1 & 0 & | -3 \\
-0 & 1 & -1 & | -5
-\end{bmatrix}$
+    1  1  1  | 6 
+    0  1  0  | -3 
+    0  1  -1  | -5
 
 - NOL-kan Elemen di bawah Elemen Pivot kedua
   
   $𝑅_3→𝑅_3-𝑅_2$
   
-  hasil matriksnya : 
+hasil matriksnya : 
   
-  $\begin{bmatrix}
-1 & 1 & 1 & | 6 \\
-0 & 1 & 0 & | -3 \\
-0 & 0 & -1 & | -2
-\end{bmatrix}$
+    1  1  1  | 6 
+    0  1  0  | -3 
+    0  0  -1  | -2
  
   
 - Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:
   
   $𝑅_3→𝑅_3.(-1)$
   
-  hasil matriksnya : 
+hasil matriksnya : 
   
-  $\begin{bmatrix}
-1 & 1 & 1 & | 6 \\
-0 & 1 & 0 & | -3 \\
-0 & 0 & 1 & | 2
-\end{bmatrix}$
+    1  1  1  | 6 
+    0  1  0  | -3 
+    0  0  1  | 2
 
 3. langkah ketiga
  subtitusi balik
  
-- Dari baris terakhir
+- Dari baris terakhir : 
   $z = 2$
-- Subtitusi z ke baris kedua
+- Subtitusi z ke baris kedua : 
   $y+z = -3$
   $y+2 = -3$
   $y   = -3-2$
   $y   = -5$
-- Subtitusi y dan z ke baris pertama
+- Subtitusi y dan z ke baris pertama : 
   $x+y+z = 6$
   $x+(-5)+2 = 6$
   $x-5+2 = 6$
@@ -120,3 +108,7 @@ $\begin{bmatrix}
   $x = 9$
 - Solusi akhir
   $x = 9, y = -5, z = 2$
+  
+  ![Screenshot 2025-03-03 204248](https://hackmd.io/_uploads/HkgfQVXoyl.png)
+
+[https://www.geogebra.org/classic/bt2sr3ar](https://)
