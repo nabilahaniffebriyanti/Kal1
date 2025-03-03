@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'sistem persamaan linier';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -376,9 +378,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">SOLUSI PERSAMAAN LINIER</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">ELIMINASI</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-sistem-persamaan-linier">SOLUSI SISTEM PERSAMAAN LINIER</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">METODE ELIMINASI</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">ELIMINASI GAUSS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-penjelasan-solusi-atau-penyelesaian-persamaan-3-variabel-dengan-menggunakan-eliminasi-gauus-serta-menampilkan-solusinya-secara-grafis-menggunakan-geogebra">MEMBUAT PENJELASAN SOLUSI ATAU PENYELESAIAN PERSAMAAN 3 VARIABEL DENGAN MENGGUNAKAN ELIMINASI GAUUS SERTA MENAMPILKAN SOLUSINYA SECARA GRAFIS MENGGUNAKAN GEOGEBRA.</a></li>
 </ul>
 </li>
 </ul>
@@ -398,17 +401,96 @@ document.write(`
 <h1>SISTEM PERSAMAAN LINEAR<a class="headerlink" href="#sistem-persamaan-linear" title="Link to this heading">#</a></h1>
 <section id="pengertian">
 <h2>PENGERTIAN<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
-<p>kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.</p>
+<p>Kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.</p>
 <p>Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.</p>
 </section>
-<section id="solusi-persamaan-linier">
-<h2>SOLUSI PERSAMAAN LINIER<a class="headerlink" href="#solusi-persamaan-linier" title="Link to this heading">#</a></h2>
-<section id="eliminasi">
-<h3>ELIMINASI<a class="headerlink" href="#eliminasi" title="Link to this heading">#</a></h3>
+<section id="solusi-sistem-persamaan-linier">
+<h2>SOLUSI SISTEM PERSAMAAN LINIER<a class="headerlink" href="#solusi-sistem-persamaan-linier" title="Link to this heading">#</a></h2>
+<section id="metode-eliminasi">
+<h3>METODE ELIMINASI<a class="headerlink" href="#metode-eliminasi" title="Link to this heading">#</a></h3>
 <p>Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.</p>
 <section id="eliminasi-gauss">
 <h4>ELIMINASI GAUSS<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h4>
 <p>sistem persamaan linear yang di ubah menjadi bentuk matriks, matriks tersebut lalu diubah kebentuk Eselon Baris melalui Operasi Baris Elementer. Kemudian sistem diselesaikan dengan substitusi balik.</p>
+</section>
+<section id="membuat-penjelasan-solusi-atau-penyelesaian-persamaan-3-variabel-dengan-menggunakan-eliminasi-gauus-serta-menampilkan-solusinya-secara-grafis-menggunakan-geogebra">
+<h4>MEMBUAT PENJELASAN SOLUSI ATAU PENYELESAIAN PERSAMAAN 3 VARIABEL DENGAN MENGGUNAKAN ELIMINASI GAUUS SERTA MENAMPILKAN SOLUSINYA SECARA GRAFIS MENGGUNAKAN GEOGEBRA.<a class="headerlink" href="#membuat-penjelasan-solusi-atau-penyelesaian-persamaan-3-variabel-dengan-menggunakan-eliminasi-gauus-serta-menampilkan-solusinya-secara-grafis-menggunakan-geogebra" title="Link to this heading">#</a></h4>
+<p>Selesaikan sistem persamaan linier berikut :</p>
+<p>x+y+z= 6
+2x+2y+3z= 14
+3x+4y+2z= 13</p>
+<p>Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas menggunakan metode eliminasi Gauss.</p>
+<ol class="arabic">
+<li><p>langkah pertama</p>
+<p>Hasil Matriksnya :</p>
+<p>1 1 1    |6
+2 2 3    |14
+3 4 2    |13</p>
+</li>
+<li><p>langkah kedua</p></li>
+</ol>
+<ul>
+<li><p>Jadikan elemen pivot pertama (baris 1, kolom 1) bernilai 1.</p></li>
+<li><p>Jika Sudah bernilai 1, jadi tidak perlu diubah.</p></li>
+<li><p>NOL-kan Elemen di bawah Elemen Pivot Pertama</p></li>
+<li><p>Pivot pertama sudah 1 di posisi (1,1). Maka Kita buat elemen di bawahnya menjadi nol:</p>
+<p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2−2𝑅_1\)</span></p>
+<p>Hasil Matriksnya :
+1 1 1    | 6
+0 0 1    | 2
+3 4 2    | 13</p>
+<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3−3𝑅_1\)</span></p>
+<p>Hasil Matriksnya :
+1 1 1    | 6
+0 0 1    | 2
+0 1 -1   | -5</p>
+</li>
+<li><p>Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:</p>
+<p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2+𝑅_3\)</span></p>
+<p>Hasil Matriksnya :
+1 1 1    | 6
+0 1 0    | -3
+0 1 -1   | -5</p>
+</li>
+<li><p>NOL-kan Elemen di bawah Elemen Pivot kedua</p>
+<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3-𝑅_2\)</span></p>
+<p>Hasil Matriksnya :
+1 1 1    | 6
+0 1 0    | -3
+0 0 -1   | -2</p>
+</li>
+<li><p>Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:</p>
+<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3.(-3)\)</span></p>
+<p>Hasil Matriksnya :
+1 1 1    | 6
+0 1 0    | -3
+0 0 1    | 2</p>
+</li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>langkah ketiga
+Subtitusi Balik</p></li>
+</ol>
+<ul class="simple">
+<li><p>Dari baris terakhir
+z = 2</p></li>
+<li><p>Subtitusi z ke baris kedua
+y+z = -3
+y+2 = -3
+y   = -3-2
+y   = -5</p></li>
+<li><p>Subtitusi y dan z ke baris pertama
+x+y+z = 6
+x+(-5)+2 = 6
+x-5+2 = 6
+x-3 = 6
+x = 6+3
+x = 9</p></li>
+<li><p>Solusi akhir
+x = 9, y = -5, dan z = 2</p></li>
+</ul>
+<p>hasil grafis dari persamaan diatas
+<img alt="Screenshot 2025-03-03 172627" src="https://hackmd.io/_uploads/HyJzrZXo1l.png" /></p>
 </section>
 </section>
 </section>
@@ -470,9 +552,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">SOLUSI PERSAMAAN LINIER</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi">ELIMINASI</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-sistem-persamaan-linier">SOLUSI SISTEM PERSAMAAN LINIER</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">METODE ELIMINASI</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss">ELIMINASI GAUSS</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-penjelasan-solusi-atau-penyelesaian-persamaan-3-variabel-dengan-menggunakan-eliminasi-gauus-serta-menampilkan-solusinya-secara-grafis-menggunakan-geogebra">MEMBUAT PENJELASAN SOLUSI ATAU PENYELESAIAN PERSAMAAN 3 VARIABEL DENGAN MENGGUNAKAN ELIMINASI GAUUS SERTA MENAMPILKAN SOLUSINYA SECARA GRAFIS MENGGUNAKAN GEOGEBRA.</a></li>
 </ul>
 </li>
 </ul>
