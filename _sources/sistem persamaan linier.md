@@ -30,11 +30,11 @@ Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas meng
 
 Hasil Matriksnya : 
 
-\begin{bmatrix}
+$\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 2 & 2 & 3 & | 14 \\
 3 & 4 & 2 & | 13
-\end{bmatrix}
+\end{bmatrix}$
 
 
 2. langkah kedua
@@ -47,21 +47,21 @@ Hasil Matriksnya :
   
   hasil matriksnya : 
   
-  \begin{bmatrix}
+  $\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 0 & 1 & | 2 \\
 3 & 4 & 2 & | 13
-\end{bmatrix}
+\end{bmatrix}$
   
   $𝑅_3→𝑅_3−3𝑅_1$
   
   hasil matriksnya : 
   
-  \begin{bmatrix}
+  $\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 0 & 1 & | 2 \\
 0 & 1 & -1 & | -5
-\end{bmatrix}
+\end{bmatrix}$
   
   
 - Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:
@@ -70,11 +70,11 @@ Hasil Matriksnya :
   
   hasil matriksnya : 
   
-  \begin{bmatrix}
+  $\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 1 & 0 & | -3 \\
 0 & 1 & -1 & | -5
-\end{bmatrix}
+\end{bmatrix}$
 
 - NOL-kan Elemen di bawah Elemen Pivot kedua
   
@@ -82,11 +82,11 @@ Hasil Matriksnya :
   
   hasil matriksnya : 
   
-  \begin{bmatrix}
+  $\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 1 & 0 & | -3 \\
 0 & 0 & -1 & | -2
-\end{bmatrix}
+\end{bmatrix}$
  
   
 - Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:
@@ -95,28 +95,28 @@ Hasil Matriksnya :
   
   hasil matriksnya : 
   
-  \begin{bmatrix}
+  $\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 1 & 0 & | -3 \\
 0 & 0 & 1 & | 2
-\end{bmatrix}
+\end{bmatrix}$
 
 3. langkah ketiga
  subtitusi balik
  
 - Dari baris terakhir
-  z = 2
+  $z = 2$
 - Subtitusi z ke baris kedua
-  y+z = -3
-  y+2 = -3
-  y   = -3-2
-  y   = -5
+  $y+z = -3$
+  $y+2 = -3$
+  $y   = -3-2$
+  $y   = -5$
 - Subtitusi y dan z ke baris pertama
-  x+y+z = 6
-  x+(-5)+2 = 6
-  x-5+2 = 6
-  x-3 = 6
-  x = 6+3
-  x = 9
+  $x+y+z = 6$
+  $x+(-5)+2 = 6$
+  $x-5+2 = 6$
+  $x-3 = 6$
+  $x = 6+3$
+  $x = 9$
 - Solusi akhir
-  x = 9, y = -5, dan z = 2
+  $x = 9, y = -5, z = 2$
