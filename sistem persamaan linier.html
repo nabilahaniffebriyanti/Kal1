@@ -401,7 +401,7 @@ document.write(`
 <h1>SISTEM PERSAMAAN LINEAR<a class="headerlink" href="#sistem-persamaan-linear" title="Link to this heading">#</a></h1>
 <section id="pengertian">
 <h2>PENGERTIAN<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
-<p>Kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.</p>
+<p>kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.</p>
 <p>Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.</p>
 </section>
 <section id="solusi-sistem-persamaan-linier">
@@ -416,17 +416,20 @@ document.write(`
 <section id="membuat-penjelasan-solusi-atau-penyelesaian-persamaan-3-variabel-dengan-menggunakan-eliminasi-gauus-serta-menampilkan-solusinya-secara-grafis-menggunakan-geogebra">
 <h4>MEMBUAT PENJELASAN SOLUSI ATAU PENYELESAIAN PERSAMAAN 3 VARIABEL DENGAN MENGGUNAKAN ELIMINASI GAUUS SERTA MENAMPILKAN SOLUSINYA SECARA GRAFIS MENGGUNAKAN GEOGEBRA.<a class="headerlink" href="#membuat-penjelasan-solusi-atau-penyelesaian-persamaan-3-variabel-dengan-menggunakan-eliminasi-gauus-serta-menampilkan-solusinya-secara-grafis-menggunakan-geogebra" title="Link to this heading">#</a></h4>
 <p>Selesaikan sistem persamaan linier berikut :</p>
-<p>x+y+z= 6</p>
-<p>2x+2y+3z= 14</p>
-<p>3x+4y+2z= 13</p>
+<p>x+y+z= 6
+2x+2y+3z= 14
+3x+4y+2z= 13</p>
 <p>Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas menggunakan metode eliminasi Gauss.</p>
-<ol class="arabic">
-<li><p>langkah pertama</p>
+<ol class="arabic simple">
+<li><p>langkah pertama</p></li>
+</ol>
 <p>Hasil Matriksnya :</p>
-<p>1 1 1    |6</p>
-<p>2 2 3    |14</p>
-<p>3 4 2    |13</p>
-</li>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+2 &amp; 2 &amp; 3 &amp; | 14 \
+3 &amp; 4 &amp; 2 &amp; | 13
+\end{bmatrix}</p>
+<ol class="arabic simple" start="2">
 <li><p>langkah kedua</p></li>
 </ol>
 <ul>
@@ -435,63 +438,69 @@ document.write(`
 <li><p>NOL-kan Elemen di bawah Elemen Pivot Pertama</p></li>
 <li><p>Pivot pertama sudah 1 di posisi (1,1). Maka Kita buat elemen di bawahnya menjadi nol:</p>
 <p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2−2𝑅_1\)</span></p>
-<p>Hasil Matriksnya :
-1 1 1    | 6</p>
-<p>0 0 1    | 2</p>
-<p>3 4 2    | 13</p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 0 &amp; 1 &amp; | 2 \
+3 &amp; 4 &amp; 2 &amp; | 13
+\end{bmatrix}</p>
 <p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3−3𝑅_1\)</span></p>
-<p>Hasil Matriksnya :
-1 1 1    | 6</p>
-<p>0 0 1    | 2</p>
-<p>0 1 -1   | -5</p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 0 &amp; 1 &amp; | 2 \
+0 &amp; 1 &amp; -1 &amp; | -5
+\end{bmatrix}</p>
 </li>
 <li><p>Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:</p>
 <p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2+𝑅_3\)</span></p>
-<p>Hasil Matriksnya :
-1 1 1    | 6</p>
-<p>0 1 0    | -3</p>
-<p>0 1 -1   | -5</p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; 0 &amp; | -3 \
+0 &amp; 1 &amp; -1 &amp; | -5
+\end{bmatrix}</p>
 </li>
 <li><p>NOL-kan Elemen di bawah Elemen Pivot kedua</p>
 <p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3-𝑅_2\)</span></p>
-<p>Hasil Matriksnya :
-1 1 1    | 6</p>
-<p>0 1 0    | -3</p>
-<p>0 0 -1   | -2</p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; 0 &amp; | -3 \
+0 &amp; 0 &amp; -1 &amp; | -2
+\end{bmatrix}</p>
 </li>
 <li><p>Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:</p>
-<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3.(-3)\)</span></p>
-<p>Hasil Matriksnya :
-1 1 1    | 6</p>
-<p>0 1 0    | -3</p>
-<p>0 0 1    | 2</p>
+<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3.(-1)\)</span></p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; 0 &amp; | -3 \
+0 &amp; 0 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
 </li>
 </ul>
 <ol class="arabic simple" start="3">
 <li><p>langkah ketiga
-Subtitusi Balik</p></li>
+subtitusi balik</p></li>
 </ol>
-<ul>
+<ul class="simple">
 <li><p>Dari baris terakhir
 z = 2</p></li>
 <li><p>Subtitusi z ke baris kedua
-y+z = -3</p>
-<p>y+2 = -3</p>
-<p>y   = -3-2</p>
-<p>y   = -5</p>
-</li>
+y+z = -3
+y+2 = -3
+y   = -3-2
+y   = -5</p></li>
 <li><p>Subtitusi y dan z ke baris pertama
-x+y+z = 6</p>
-<p>x+(-5)+2 = 6</p>
-<p>x-5+2 = 6</p>
-<p>x-3 = 6</p>
-<p>x = 6+3</p>
-<p>x = 9</p>
-</li>
-<li><p>Solusi akhir</p></li>
-<li><p>x = 9, y = -5, dan z = 2</p></li>
-<li><p>Hasil grafis dari persamaan diatas
-<img alt="Screenshot 2025-03-03 172627" src="https://hackmd.io/_uploads/HyJzrZXo1l.png" /></p></li>
+x+y+z = 6
+x+(-5)+2 = 6
+x-5+2 = 6
+x-3 = 6
+x = 6+3
+x = 9</p></li>
+<li><p>Solusi akhir
+x = 9, y = -5, dan z = 2</p></li>
 </ul>
 </section>
 </section>

@@ -5,7 +5,7 @@ title: sistem persamaan linier
 
 # SISTEM PERSAMAAN LINEAR
 ## PENGERTIAN
-Kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.
+kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.
 
 Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.
  
@@ -21,22 +21,21 @@ sistem persamaan linear yang di ubah menjadi bentuk matriks, matriks tersebut la
 Selesaikan sistem persamaan linier berikut :
  
  x+y+z= 6
- 
 2x+2y+3z= 14
-
 3x+4y+2z= 13
 
 Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas menggunakan metode eliminasi Gauss.
 
 1. langkah pertama 
 
-   Hasil Matriksnya : 
+Hasil Matriksnya : 
 
-   1 1 1    |6
-   
-   2 2 3    |14
-   
-   3 4 2    |13
+\begin{bmatrix}
+1 & 1 & 1 & | 6 \\
+2 & 2 & 3 & | 14 \\
+3 & 4 & 2 & | 13
+\end{bmatrix}
+
 
 2. langkah kedua
 - Jadikan elemen pivot pertama (baris 1, kolom 1) bernilai 1.
@@ -46,86 +45,78 @@ Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas meng
 
   $𝑅_2→𝑅_2−2𝑅_1$
   
-  Hasil Matriksnya : 
-  1 1 1    | 6
+  hasil matriksnya : 
   
-  0 0 1    | 2
-  
-  3 4 2    | 13
+  \begin{bmatrix}
+1 & 1 & 1 & | 6 \\
+0 & 0 & 1 & | 2 \\
+3 & 4 & 2 & | 13
+\end{bmatrix}
   
   $𝑅_3→𝑅_3−3𝑅_1$
   
-  Hasil Matriksnya : 
-  1 1 1    | 6
+  hasil matriksnya : 
   
-  0 0 1    | 2
+  \begin{bmatrix}
+1 & 1 & 1 & | 6 \\
+0 & 0 & 1 & | 2 \\
+0 & 1 & -1 & | -5
+\end{bmatrix}
   
-  0 1 -1   | -5
   
 - Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:
 
   $𝑅_2→𝑅_2+𝑅_3$
   
-  Hasil Matriksnya : 
-  1 1 1    | 6
+  hasil matriksnya : 
   
-  0 1 0    | -3
-  
-  0 1 -1   | -5
-  
+  \begin{bmatrix}
+1 & 1 & 1 & | 6 \\
+0 & 1 & 0 & | -3 \\
+0 & 1 & -1 & | -5
+\end{bmatrix}
+
 - NOL-kan Elemen di bawah Elemen Pivot kedua
   
   $𝑅_3→𝑅_3-𝑅_2$
   
-  Hasil Matriksnya : 
-  1 1 1    | 6
+  hasil matriksnya : 
   
-  0 1 0    | -3
-  
-  0 0 -1   | -2
+  \begin{bmatrix}
+1 & 1 & 1 & | 6 \\
+0 & 1 & 0 & | -3 \\
+0 & 0 & -1 & | -2
+\end{bmatrix}
+ 
   
 - Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:
   
-  $𝑅_3→𝑅_3.(-3)$
+  $𝑅_3→𝑅_3.(-1)$
   
-  Hasil Matriksnya : 
-  1 1 1    | 6
+  hasil matriksnya : 
   
-  0 1 0    | -3
-  
-  0 0 1    | 2
-  
+  \begin{bmatrix}
+1 & 1 & 1 & | 6 \\
+0 & 1 & 0 & | -3 \\
+0 & 0 & 1 & | 2
+\end{bmatrix}
+
 3. langkah ketiga
- Subtitusi Balik
+ subtitusi balik
  
 - Dari baris terakhir
   z = 2
-  
 - Subtitusi z ke baris kedua
   y+z = -3
-  
   y+2 = -3
-  
   y   = -3-2
-  
   y   = -5
-  
 - Subtitusi y dan z ke baris pertama
   x+y+z = 6
-  
   x+(-5)+2 = 6
-  
   x-5+2 = 6
-  
   x-3 = 6
-  
   x = 6+3
-  
   x = 9
-  
 - Solusi akhir
-- 
   x = 9, y = -5, dan z = 2
- 
-- Hasil grafis dari persamaan diatas
-![Screenshot 2025-03-03 172627](https://hackmd.io/_uploads/HyJzrZXo1l.png)
