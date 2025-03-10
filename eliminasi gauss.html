@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to my book nabila hanif febriyanti &#8212; My sample book</title>
+    <title>ELIMINASI GAUSS &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'eliminasi gauss';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="SISTEM PERSAMAAN LINEAR" href="sistem%20persamaan%20linier.html" />
+    <link rel="prev" title="SISTEM PERSAMAAN LINEAR" href="sistem%20persamaan%20linier.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,15 +174,15 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to my book nabila hanif febriyanti
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sistem%20persamaan%20linier.html">SISTEM PERSAMAAN LINEAR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eliminasi%20gauss.html">ELIMINASI GAUSS</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ELIMINASI GAUSS</a></li>
 </ul>
 
     </div>
@@ -256,7 +254,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Feliminasi gauss.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +284,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/eliminasi gauss.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +355,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -368,11 +368,27 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to my book nabila hanif febriyanti</h1>
+    <h1>ELIMINASI GAUSS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">METODE ELIMINASI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">ELIMINASI GAUSS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-solusi-atau-penyelesaian">Penjelasan Solusi atau Penyelesaian</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -382,15 +398,167 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-my-book-nabila-hanif-febriyanti">
-<h1>Welcome to my book nabila hanif febriyanti<a class="headerlink" href="#welcome-to-my-book-nabila-hanif-febriyanti" title="Link to this heading">#</a></h1>
-<p>ini adalah halaman web saya yang mencangkup catatan materi tentang mata kuliah komputasi aljabar linier yang meliputi definisi, grafik, contoh dan soal.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="sistem%20persamaan%20linier.html">SISTEM PERSAMAAN LINEAR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eliminasi%20gauss.html">ELIMINASI GAUSS</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="eliminasi-gauss">
+<h1>ELIMINASI GAUSS<a class="headerlink" href="#eliminasi-gauss" title="Link to this heading">#</a></h1>
+<section id="pengertian">
+<h2>PENGERTIAN<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
+<section id="metode-eliminasi">
+<h3>METODE ELIMINASI<a class="headerlink" href="#metode-eliminasi" title="Link to this heading">#</a></h3>
+<p>Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.</p>
+</section>
+<section id="id1">
+<h3>ELIMINASI GAUSS<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Sistem persamaan linear yang di ubah menjadi bentuk matriks, matriks tersebut lalu diubah kebentuk Eselon Baris melalui Operasi Baris Elementer. Kemudian sistem diselesaikan dengan substitusi balik.</p>
+<section id="tugas">
+<h4>TUGAS<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h4>
+<p>MEMBUAT PENJELASAN SOLUSI ATAU PENYELESAIAN PERSAMAAN 3 VARIABEL DENGAN MENGGUNAKAN ELIMINASI GAUUS SERTA MENAMPILKAN SOLUSINYA SECARA GRAFIS MENGGUNAKAN GEOGEBRA !!</p>
+<p>Selesaikan sistem persamaan linier berikut :</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>x + y + z = 6
+2x + 2y + 3z = 14
+3x + 4y + 2z = 13
+</pre></div>
 </div>
+<p>Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas menggunakan metode eliminasi Gauss.</p>
+<ol class="arabic simple">
+<li><p>langkah pertama</p></li>
+</ol>
+<p>persamaan linier di ubah ke dalam bentuk Matriks Augmented
+Hasil Matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+2 &amp; 2 &amp; 3 &amp; | 14 \
+3 &amp; 4 &amp; 2 &amp; | 13  \
+\end{bmatrix}</p>
+<ol class="arabic simple" start="2">
+<li><p>langkah kedua</p></li>
+</ol>
+<ul>
+<li><p>Jadikan elemen pivot pertama (baris 1, kolom 1) bernilai 1.</p></li>
+<li><p>Jika Sudah bernilai 1, maka tidak perlu diubah.</p></li>
+<li><p>NOL-kan Elemen di bawah Elemen Pivot Pertama</p></li>
+<li><p>Pivot pertama sudah 1 di posisi (1,1). Maka Kita akan buat elemen di bawahnya menjadi nol:</p>
+<p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2−2𝑅_1\)</span></p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 0 &amp; 1 &amp; | 2  \
+3 &amp; 4 &amp; 2 &amp; | 13  \
+\end{bmatrix}</p>
+<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3−3𝑅_1\)</span></p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp;  | 6 \
+0 &amp; 0 &amp; 1 &amp;  | 2  \
+0 &amp; 1 &amp; -1 &amp; | -5  \
+\end{bmatrix}</p>
+</li>
+<li><p>Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:</p>
+<p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2+𝑅_3\)</span></p>
+<p>hasil matriksnya :</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; 0 &amp; | -3 \
+0 &amp; 1 &amp; -1 &amp; | -5
+\end{bmatrix}</p>
+</li>
+<li><p>NOL-kan Elemen di bawah Elemen Pivot kedua :
+<span class="math notranslate nohighlight">\(𝑅_3→𝑅_3-𝑅_2\)</span>
+hasil matriksnya :</p></li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; 0 &amp; | -3 \
+0 &amp; 0 &amp; -1 &amp; | -2 \
+\end{bmatrix}</p>
+<ul>
+<li><p>Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:</p>
+<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3.(-1)\)</span>
+hasil matriksnya :</p>
+</li>
+</ul>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; 1 &amp; 0 &amp; | -3 \
+0 &amp; 0 &amp; 1 &amp; | 2   \
+\end{bmatrix}</p>
+<ol class="arabic simple" start="3">
+<li><p>langkah ketiga
+Subtitusi Balik</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\text{Dari baris terakhir } : \]</div>
+<div class="math notranslate nohighlight">
+\[z = 2\]</div>
+<div class="math notranslate nohighlight">
+\[\text{Substitusi z ke baris kedua} : \]</div>
+<div class="math notranslate nohighlight">
+\[ y - 2 = -5 \quad \Rightarrow \quad y = -3 \]</div>
+<div class="math notranslate nohighlight">
+\[ \text{Substitusi y dan z ke baris pertama}:\]</div>
+<div class="math notranslate nohighlight">
+\[ x + y + z = 6 \quad \Rightarrow \quad x + (- 3) + 2 = 6 \quad \Rightarrow \quad x - 1 = 6 \quad \Rightarrow \quad x = 7 \]</div>
+<div class="math notranslate nohighlight">
+\[ \text{Solusi akhir :}\]</div>
+<div class="math notranslate nohighlight">
+\[ x = 7, \quad y = -3, \quad z = 2\]</div>
+</section>
+</section>
+<section id="penjelasan-solusi-atau-penyelesaian">
+<h3>Penjelasan Solusi atau Penyelesaian<a class="headerlink" href="#penjelasan-solusi-atau-penyelesaian" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Satu Solusi Unik
+Jika sistem persamaan memiliki satu solusi unik, maka sistem tersebut konsisten dan tidak bergantung. Setelah dilakukan eliminasi Gauss, matriks augmented akan memiliki bentuk segitiga atas, dan setiap variabel akan memiliki nilai tertentu setelah dilakukan substitusi balik.</p></li>
+</ol>
+<p>Contoh sistem yang memiliki satu solusi unik:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>x + y + z = 6
+2x + 2y + 3z = 14
+3x + 4y + 2z = 13
+</pre></div>
+</div>
+<p>Setelah di lakukan penyelesaian menggunakan metode eliminasi Gauss, sistem ini menghasilkan solusi yang jelas, misalnya:</p>
+<div class="math notranslate nohighlight">
+\[ x = 7, \quad y = -3, \quad z = 2\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Tidak Ada Solusi
+Jika sistem persamaan linear tidak memiliki solusi, maka sistem tersebut inkonsisten. Hal ini terjadi ketika selama eliminasi Gauss kita memperoleh sebuah baris yang berbentuk seperti 0=1 (atau bentuk lain), yang menunjukkan bahwa tidak ada solusi yang memenuhi sistem persamaan tersebut.</p></li>
+</ol>
+<p>Contoh sistem yang inkonsisten:</p>
+<p>Sistem persamaan berikut:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>x + y = 3
+2x + 2y = 7
+</pre></div>
+</div>
+<p>tidak memiliki solusi karena persamaan kedua sebenarnya adalah hasil dari persamaan pertama yang dikalikan 2, tetapi dengan konstanta yang berbeda (6 vs 7). Hal ini membuat sistem ini tidak konsisten dan tidak mungkin memiliki nilai  dan  yang memenuhi kedua persamaan secara bersamaan.</p>
+<p>Jika kita melakukan eliminasi Gauss pada sistem ini, kita akan mendapatkan baris yang bertentangan, seperti:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0𝑥 + 0𝑦 = 1
+</pre></div>
+</div>
+<p>Ini menunjukkan bahwa sistem tersebut tidak ada solusi.</p>
+<ol class="arabic simple" start="3">
+<li><p>Tak Terhingga Banyak Solusi
+Jika sistem persamaan memiliki lebih dari satu solusi, maka sistem tersebut konsisten dan bergantung. Ini terjadi ketika, setelah eliminasi Gauss, kita mendapatkan satu atau lebih baris yang semuanya nol (misalnya, 0=0 yang menunjukkan bahwa sistem tersebut memiliki tak terhingga banyak solusi.</p></li>
+</ol>
+<p>Contoh sistem yang memiliki tak terhingga banyak solusi:</p>
+<p>sistem persamaan berikut :</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>𝑥 + 𝑦 = 2
+2𝑥 + 2𝑦 = 4
+</pre></div>
+</div>
+<p>memiliki tak hingga banyak solusi karena persamaan kedua sebenarnya adalah hasil dari persamaan pertama yang dikalikan 2. Ini berarti kedua persamaan sebenarnya sama dan merepresentasikan garis yang sama di bidang koordinat.</p>
+<p>Setelah eliminasi Gauss, kita akan mendapatkan baris yang tidak memberikan informasi baru, seperti:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0𝑥 + 0𝑦 = 0
+</pre></div>
+</div>
+<p>Ini menunjukkan bahwa sistem ini memiliki tak terhingga banyak solusi, dan solusinya dapat ditulis dalam bentuk parameter, seperti:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>𝑥 = 2 − 𝑦
+</pre></div>
+</div>
+<p>Dengan demikian, 𝑦 dapat berupa sembarang nilai, dan 𝑥 bergantung pada nilai 𝑦</p>
+<p>Hasil grafis dari geogebra</p>
+<p><img alt="gegogebra" src="https://hackmd.io/_uploads/S1gNJnaiikl.png" /></p>
+<p><a class="reference external" href="https://">https://www.geogebra.org/classic/xjzddhvh</a></p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -423,14 +591,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
+    <a class="left-prev"
        href="sistem%20persamaan%20linier.html"
-       title="next page">
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">SISTEM PERSAMAAN LINEAR</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -438,6 +606,29 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">METODE ELIMINASI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">ELIMINASI GAUSS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-solusi-atau-penyelesaian">Penjelasan Solusi atau Penyelesaian</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

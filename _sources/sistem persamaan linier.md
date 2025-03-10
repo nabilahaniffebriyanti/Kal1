@@ -5,110 +5,71 @@ title: sistem persamaan linier
 
 # SISTEM PERSAMAAN LINEAR
 ## PENGERTIAN
-kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.
+Kumpulan persamaan linear yang terdiri dari beberapa variabel. Sistem persamaan linear merupakan salah satu materi dalam ilmu matematika.
 
-Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.
- 
-## SOLUSI SISTEM PERSAMAAN LINIER
-### METODE ELIMINASI
-Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.
+### Sistem persamaan linear
+Bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.
 
-#### ELIMINASI GAUSS
-sistem persamaan linear yang di ubah menjadi bentuk matriks, matriks tersebut lalu diubah kebentuk Eselon Baris melalui Operasi Baris Elementer. Kemudian sistem diselesaikan dengan substitusi balik.
+Berikut adalah contoh sistem persamaan linear :
 
-#### MEMBUAT PENJELASAN SOLUSI ATAU PENYELESAIAN PERSAMAAN 3 VARIABEL DENGAN MENGGUNAKAN ELIMINASI GAUUS SERTA MENAMPILKAN SOLUSINYA SECARA GRAFIS MENGGUNAKAN GEOGEBRA.  
+    2x + y = 7
+    3x - y = 5
 
-Selesaikan sistem persamaan linier berikut :
- 
-    x + y + z = 6
-    2x + 2y + 3z = 14
-    3x + 4y + 2z = 13
+Solusi dengan Eliminasi : 
 
-Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas menggunakan metode eliminasi Gauss.
+1. Jumlahkan kedua persamaan untuk menghilangkan y : 
+$(2x + y) + (3x - y) = 7 + 5 \quad \Rightarrow \quad 5x = 12  \quad \Rightarrow \quad x = \frac{12}{5}$
 
-1. langkah pertama 
+2. Substitusi $x = \left(\frac{12}{5}\right)$ ke persamaan pertama:
 
-  Hasil Matriksnya : 
+$2\left(\frac{12}{5}\right) + y = 7 \quad \Rightarrow \quad \frac{24}{5} + y = 7 \quad \Rightarrow \quad y = 7 - \frac{24}{5} \quad \Rightarrow \quad y = \frac{35}{5} - \frac{24}{5} \quad \Rightarrow \quad y = \frac{11}{5}$
 
-    1  1  1  | 6 
-    2  2  3  | 14 
-    3  4  2  | 13
+Solusi sistem persamaan ini adalah:
 
+$\boxed{x = \frac{12}{5}, \quad y = \frac{11}{5}}$
 
-2. langkah kedua
-- Jadikan elemen pivot pertama (baris 1, kolom 1) bernilai 1.
-- Jika Sudah bernilai 1, jadi tidak perlu diubah.
-- NOL-kan Elemen di bawah Elemen Pivot Pertama
-- Pivot pertama sudah 1 di posisi (1,1). Maka Kita buat elemen di bawahnya menjadi nol:
+### Sistem persamaan non-linier 
+adalah kumpulan dari dua atau lebih persamaan yang tidak semuanya linier, yaitu mengandung pangkat variabel lebih dari satu, perkalian antar variabel.
 
-  $𝑅_2→𝑅_2−2𝑅_1$
-  
-hasil matriksnya : 
-  
-    1  1  1  | 6 
-    0  0  1  | 2 
-    3  4  2  | 13
-  
-  $𝑅_3→𝑅_3−3𝑅_1$
-  
-hasil matriksnya : 
-  
-    1  1  1 | 6 
-    0  0  1 | 2 
-    0  1  -1 | -5
+Berikut adalah contoh sistem persamaan non-linear:
 
-  
-- Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:
+$\boxed {x^2 + y^2 = 25}$
+$\boxed {x + y = 7}$
 
-  $𝑅_2→𝑅_2+𝑅_3$
-  
-hasil matriksnya : 
-  
-    1  1  1  | 6 
-    0  1  0  | -3 
-    0  1  -1  | -5
+Penjelasan
 
-- NOL-kan Elemen di bawah Elemen Pivot kedua
-  
-  $𝑅_3→𝑅_3-𝑅_2$
-  
-hasil matriksnya : 
-  
-    1  1  1  | 6 
-    0  1  0  | -3 
-    0  0  -1  | -2
- 
-  
-- Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:
-  
-  $𝑅_3→𝑅_3.(-1)$
-  
-hasil matriksnya : 
-  
-    1  1  1  | 6 
-    0  1  0  | -3 
-    0  0  1  | 2
+- Persamaan pertama  adalah persamaan lingkaran dengan pusat di (0,0) dan jari-jari 5.
+- Persamaan kedua  adalah persamaan garis lurus.
 
-3. langkah ketiga
- subtitusi balik
- 
-- Dari baris terakhir : 
-  $z = 2$
-- Subtitusi z ke baris kedua : 
-  $y+z = -3$
-  $y+2 = -3$
-  $y   = -3-2$
-  $y   = -5$
-- Subtitusi y dan z ke baris pertama : 
-  $x+y+z = 6$
-  $x+(-5)+2 = 6$
-  $x-5+2 = 6$
-  $x-3 = 6$
-  $x = 6+3$
-  $x = 9$
-- Solusi akhir
-  $x = 9, y = -5, z = 2$
-  
-  ![Screenshot 2025-03-03 204248](https://hackmd.io/_uploads/HkgfQVXoyl.png)
+Untuk menyelesaikannya, kita bisa menggunakan substitusi atau eliminasi.
 
-[https://www.geogebra.org/classic/bt2sr3ar](https://)
+Solusi dengan Substitusi
+
+Dari persamaan garis:
+
+$y = 7 - x$
+
+Substitusi ke persamaan lingkaran:
+
+$x^2 + (7 - x)^2 = 25$
+
+Kembangkan:
+
+$x^2 + (49 - 14x + x^2) = 25 \quad \Rightarrow \quad x^2 + 49 - 14x + x^2 = 25 \quad \Rightarrow \quad 2x^2 - 14x + 49 = 25 \quad \Rightarrow \quad 2x^2 - 14x + 24 = 0$
+
+Bagi semuanya dengan 2:
+
+$x^2 - 7x + 12 = 0$
+
+Faktorkan :
+
+$(x - 3)(x - 4) = 0$
+
+Sehingga menghasilkan :
+
+$x = 3 \quad \text {atau} \quad x = 4$
+
+Substitusi kembali untuk mencari :
+
+Jika x = 3 , maka y = 7-3 = 4 → Solusi (3 , 4)
+Jika x = 4 , maka y = 7-4 = 3 → Solusi (4 , 3)
