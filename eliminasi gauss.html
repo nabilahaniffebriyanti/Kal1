@@ -422,69 +422,76 @@ document.write(`
 <ol class="arabic simple">
 <li><p>langkah pertama</p></li>
 </ol>
-<p>persamaan linier di ubah ke dalam bentuk Matriks Augmented
-Hasil Matriksnya :</p>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+<p>persamaan linier di ubah ke dalam bentuk Matriks Augmented</p>
+<p>Hasil Matriksnya :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \\
 2 &amp; 2 &amp; 3 &amp; | 14 \\
-3 &amp; 4 &amp; 2 &amp; | 13  \\
-\end{bmatrix}\)</span></p>
+3 &amp; 4 &amp; 2 &amp; | 13  \
+\end{bmatrix}\end{split}\]</div>
 <ol class="arabic simple" start="2">
 <li><p>langkah kedua</p></li>
 </ol>
-<ul>
+<ul class="simple">
 <li><p>Jadikan elemen pivot pertama (baris 1, kolom 1) bernilai 1.</p></li>
 <li><p>Jika Sudah bernilai 1, maka tidak perlu diubah.</p></li>
 <li><p>NOL-kan Elemen di bawah Elemen Pivot Pertama</p></li>
-<li><p>Pivot pertama sudah 1 di posisi (1,1). Maka Kita akan buat elemen di bawahnya menjadi nol:</p>
-<p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2−2𝑅_1\)</span></p>
-<p>hasil matriksnya :</p>
-</li>
+<li><p>Pivot pertama sudah 1 di posisi (1,1). Maka Kita akan buat elemen di bawahnya menjadi nol:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+<div class="math notranslate nohighlight">
+\[𝑅_2→𝑅_2−2𝑅_1\]</div>
+<p>hasil matriksnya :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \\
 0 &amp; 0 &amp; 1 &amp; | 2  \\
-3 &amp; 4 &amp; 2 &amp; | 13  \\
-\end{bmatrix}\)</span></p>
-<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3−3𝑅_1\)</span></p>
+3 &amp; 4 &amp; 2 &amp; | 13  \
+\end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[𝑅_3→𝑅_3−3𝑅_1\]</div>
 <p>hasil matriksnya :</p>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp;  | 6 \\
 0 &amp; 0 &amp; 1 &amp;  | 2  \\
-0 &amp; 1 &amp; -1 &amp; | -5  \\
-\end{bmatrix}\)</span></p>
-<ul>
-<li><p>Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:</p>
-<p><span class="math notranslate nohighlight">\(𝑅_2→𝑅_2+𝑅_3\)</span></p>
-<p>hasil matriksnya :</p>
-</li>
+0 &amp; 1 &amp; -1 &amp; | -5  \
+\end{bmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+<div class="math notranslate nohighlight">
+\[𝑅_2→𝑅_2+𝑅_3\]</div>
+<p>hasil matriksnya :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \\
 0 &amp; 1 &amp; 0 &amp; | -3 \\
-0 &amp; 1 &amp; -1 &amp; | -5
-\end{bmatrix}\)</span></p>
+0 &amp; 1 &amp; -1 &amp; | -5 \
+\end{bmatrix}\end{split}\]</div>
 <ul class="simple">
 <li><p>NOL-kan Elemen di bawah Elemen Pivot kedua :
-<span class="math notranslate nohighlight">\(𝑅_3→𝑅_3-𝑅_2\)</span>
+$<span class="math notranslate nohighlight">\(𝑅_3→𝑅_3-𝑅_2\)</span>$
 hasil matriksnya :</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \\
 0 &amp; 1 &amp; 0 &amp; | -3 \\
-0 &amp; 0 &amp; -1 &amp; | -2 \\
-\end{bmatrix}\)</span></p>
-<ul>
-<li><p>Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:</p>
-<p><span class="math notranslate nohighlight">\(𝑅_3→𝑅_3.(-1)\)</span>
-hasil matriksnya :</p>
-</li>
+0 &amp; 0 &amp; -1 &amp; | -2 \
+\end{bmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:</p></li>
 </ul>
-<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+<div class="math notranslate nohighlight">
+\[𝑅_3→𝑅_3.(-1)\]</div>
+<p>hasil matriksnya :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
 1 &amp; 1 &amp; 1 &amp; | 6 \\
 0 &amp; 1 &amp; 0 &amp; | -3 \\
-0 &amp; 0 &amp; 1 &amp; | 2   \\
-\end{bmatrix}\)</span></p>
+0 &amp; 0 &amp; 1 &amp; | 2   \ 
+\end{bmatrix}\end{split}\]</div>
 <ol class="arabic simple" start="3">
 <li><p>langkah ketiga
 Subtitusi Balik</p></li>
