@@ -27,11 +27,11 @@ Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas meng
 persamaan linier di ubah ke dalam bentuk Matriks Augmented
 Hasil Matriksnya : 
 
-\begin{bmatrix}
+$\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 2 & 2 & 3 & | 14 \\
 3 & 4 & 2 & | 13  \\
-\end{bmatrix}
+\end{bmatrix}$
 
 
 2. langkah kedua
@@ -44,22 +44,22 @@ Hasil Matriksnya :
   
   hasil matriksnya : 
   
-  \begin{bmatrix}
+$\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 0 & 1 & | 2  \\
 3 & 4 & 2 & | 13  \\
-\end{bmatrix}
+\end{bmatrix}$
  
   
   $𝑅_3→𝑅_3−3𝑅_1$
   
   hasil matriksnya : 
   
-  \begin{bmatrix}
+$\begin{bmatrix}
 1 & 1 & 1 &  | 6 \\
 0 & 0 & 1 &  | 2  \\
 0 & 1 & -1 & | -5  \\
-\end{bmatrix}
+\end{bmatrix}$
   
   
 - Jadikan elemen pivot kedua (baris 2, kolom 2) bernilai 1:
@@ -68,21 +68,21 @@ Hasil Matriksnya :
   
   hasil matriksnya :
   
-  \begin{bmatrix}
+$\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 1 & 0 & | -3 \\
 0 & 1 & -1 & | -5
-\end{bmatrix}
+\end{bmatrix}$
   
  - NOL-kan Elemen di bawah Elemen Pivot kedua :
   $𝑅_3→𝑅_3-𝑅_2$
   hasil matriksnya : 
 
-\begin{bmatrix}
+$\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 1 & 0 & | -3 \\
 0 & 0 & -1 & | -2 \\
-\end{bmatrix}
+\end{bmatrix}$
   
   
 - Jadikan elemen pivot kedua (baris 3, kolom 3) bernilai 1:
@@ -90,11 +90,11 @@ Hasil Matriksnya :
   $𝑅_3→𝑅_3.(-1)$
   hasil matriksnya : 
 
-\begin{bmatrix}
+$\begin{bmatrix}
 1 & 1 & 1 & | 6 \\
 0 & 1 & 0 & | -3 \\
 0 & 0 & 1 & | 2   \\
-\end{bmatrix}
+\end{bmatrix}$
   
 3. langkah ketiga
    Subtitusi Balik
