@@ -402,7 +402,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-utama-dari-persamaan-3-variabel">3. Bentuk matriks utama dari persamaan 3 variabel</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-dengan-matriks-diagonalnya-dari-persamaan-3-variabel">4. Bentuk matriks dengan matriks diagonalnya dari persamaan 3 variabel</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gunakan-penyelesaian-dengan-metode-eliminasi-gauss">5. Gunakan penyelesaian dengan metode Eliminasi Gauss</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setelah-itu-gunakan-rumus-invers-ax-b">6. Setelah itu gunakan rumus invers$<span class="math notranslate nohighlight">\((Ax= B)\)</span>$</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setelah-itu-gunakan-rumus-invers-ax-b">6. Setelah itu gunakan rumus invers<span class="math notranslate nohighlight">\((Ax= B)\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -428,58 +428,57 @@ document.write(`
 <h4>A. Sifat Penjumlahan<a class="headerlink" href="#a-sifat-penjumlahan" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Sifat komutatif adalah salah satu sifat dalam operasi matematika yang menyatakan bahwa urutan operand tidak memengaruhi hasil operasi. Dengan kata lain, jika ( a ) dan ( b ) adalah dua elemen, maka:
-$<span class="math notranslate nohighlight">\(( a + b = b + a )\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(( a + b = b + a )\)</span></p></li>
 <li><p>Sifat asosiatif adalah salah satu sifat penting dalam operasi matematika yang menyatakan bahwa cara pengelompokan operand tidak memengaruhi hasil operasi.
-$<span class="math notranslate nohighlight">\((𝐴+(𝐵+𝐶)=(𝐴+𝐵)+𝐶)\)</span>$</p></li>
+<span class="math notranslate nohighlight">\((𝐴+(𝐵+𝐶)=(𝐴+𝐵)+𝐶)\)</span></p></li>
 </ul>
 </section>
 <section id="b-sifat-perkalian">
 <h4>B. Sifat Perkalian<a class="headerlink" href="#b-sifat-perkalian" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Sifat komutatif adalah salah satu sifat dalam operasi matematika yang menyatakan bahwa urutan operand tidak memengaruhi hasil operasi. Dengan kata lain, jika ( a ) dan ( b ) adalah dua elemen, maka:
-perkalian matriks tidak selalu komutatif, sehingga $<span class="math notranslate nohighlight">\(( A \cdot B \neq B \cdot A )\)</span>$ dalam banyak kasus.</p></li>
+perkalian matriks tidak selalu komutatif, sehingga <span class="math notranslate nohighlight">\(( A \cdot B \neq B \cdot A )\)</span> dalam banyak kasus.</p></li>
 <li><p>Sifat asosiatif adalah salah satu sifat penting dalam operasi matematika yang menyatakan bahwa cara pengelompokan operand tidak memengaruhi hasil operasi.
-Sifat asosiatif juga berlaku dalam perkalian matriks: $<span class="math notranslate nohighlight">\([ (A \cdot B) \cdot C = A \cdot (B \cdot C) ]\)</span>$ Tetapi ingat, urutan pengelompokan tetap penting meskipun hasil akhirnya sama. Namun, perkalian matriks tidak bersifat komutatif.</p></li>
+Sifat asosiatif juga berlaku dalam perkalian matriks: <span class="math notranslate nohighlight">\([ (A \cdot B) \cdot C = A \cdot (B \cdot C) ]\)</span> Tetapi ingat, urutan pengelompokan tetap penting meskipun hasil akhirnya sama. Namun, perkalian matriks tidak bersifat komutatif.</p></li>
 <li><p>Sifat distributif kiri adalah salah satu sifat dalam aljabar yang menghubungkan dua operasi, seperti perkalian dan penjumlahan, sehingga memenuhi aturan tertentu. Dalam konteks matriks, sifat distributif kiri menyatakan bahwa:
-$<span class="math notranslate nohighlight">\([ A \cdot (B + C) = A \cdot B + A \cdot C ]\)</span>$</p></li>
+<span class="math notranslate nohighlight">\([ A \cdot (B + C) = A \cdot B + A \cdot C ]\)</span></p></li>
 <li><p>Sifat distributif kanan adalah sifat yang berlaku dalam operasi aljabar, khususnya dalam konteks perkalian dan penjumlahan matriks. Sifat ini menyatakan bahwa:
-$<span class="math notranslate nohighlight">\([ (A + B) \cdot C = A \cdot C + B \cdot C ]\)</span>$</p></li>
+<span class="math notranslate nohighlight">\([ (A + B) \cdot C = A \cdot C + B \cdot C ]\)</span></p></li>
 </ul>
 </section>
 <section id="c-sifat-perkalian-skalar">
 <h4>C. Sifat Perkalian Skalar<a class="headerlink" href="#c-sifat-perkalian-skalar" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Sifat distributif pada matriks adalah sifat yang menghubungkan operasi penjumlahan dan perkalian matriks, di mana terdapat dua jenis utama: distributif kiri dan distributif kanan.
-$<span class="math notranslate nohighlight">\(𝑎(𝐵+𝐶)=𝑎𝐵+𝑎𝐶\)</span>$</p></li>
+<span class="math notranslate nohighlight">\(𝑎(𝐵+𝐶)=𝑎𝐵+𝑎𝐶\)</span></p></li>
 <li><p>Sifat distributif skalar mengacu pada interaksi antara bilangan skalar (angka) dan operasi penjumlahan atau perkalian matriks. Dalam konteks ini, skalar didistribusikan ke setiap elemen matriks atau ke setiap operasi penjumlahan matriks.
-$<span class="math notranslate nohighlight">\((𝑎+𝑏)𝐶=𝑎𝐶+𝑏𝐶\)</span>$</p></li>
+<span class="math notranslate nohighlight">\((𝑎+𝑏)𝐶=𝑎𝐶+𝑏𝐶\)</span></p></li>
 <li><p>Sifat asosiatif dalam konteks skalar mengacu pada bagaimana pengelompokan operasi perkalian skalar tidak memengaruhi hasil akhir. Dengan kata lain, untuk bilangan skalar ( k ) dan ( c ), serta matriks ( A ), sifat asosiatif skalar dapat dituliskan sebagai:
-$<span class="math notranslate nohighlight">\([ (k \cdot c) \cdot A = k \cdot (c \cdot A) ]\)</span>$</p></li>
+<span class="math notranslate nohighlight">\([ (k \cdot c) \cdot A = k \cdot (c \cdot A) ]\)</span></p></li>
 <li><p>Sifat komutatif skalar menunjukkan bahwa urutan perkalian antara bilangan skalar tidak memengaruhi hasil akhir. Secara matematis, untuk bilangan skalar ( k ) dan ( c ), berlaku:
-$<span class="math notranslate nohighlight">\([ k \cdot c = c \cdot k ]\)</span>$</p></li>
+<span class="math notranslate nohighlight">\([ k \cdot c = c \cdot k ]\)</span></p></li>
 </ul>
 </section>
 </section>
 <section id="invers-aditif-matriks">
 <h3>2. Invers Aditif Matriks<a class="headerlink" href="#invers-aditif-matriks" title="Link to this heading">#</a></h3>
 <p>Invers aditif dari suatu matriks adalah matriks lain yang jika dijumlahkan dengan matriks awal menghasilkan matriks nol (matriks identitas aditif). Secara matematis, jika matriks awal adalah ( A ), maka invers aditif dari ( A ) adalah ( -A ), sehingga:</p>
-<div class="math notranslate nohighlight">
-\[[ A + (-A) = 0 ]\]</div>
+<p><span class="math notranslate nohighlight">\([ A + (-A) = 0 ]\)</span></p>
 <p>Di mana ( 0 ) adalah matriks nol dengan dimensi yang sama seperti ( A ). Setiap elemen matriks ( -A ) adalah kebalikan (negatif) dari elemen matriks ( A ).</p>
 </section>
 <section id="matriks-identitas">
 <h3>3. Matriks Identitas<a class="headerlink" href="#matriks-identitas" title="Link to this heading">#</a></h3>
 <p>Matriks identitas adalah matriks persegi (jumlah baris sama dengan jumlah kolom) di mana elemen-elemen pada diagonal utama memiliki nilai ( 1 ), sementara elemen-elemen lainnya adalah ( 0 ). Matriks ini disebut juga sebagai matriks satuan karena berfungsi seperti elemen identitas dalam operasi perkalian matriks, yaitu:</p>
-<div class="math notranslate nohighlight">
-\[[ A \cdot I = A ]$$$$[ I \cdot A = A ]\]</div>
+<p><span class="math notranslate nohighlight">\([ A \cdot I = A ]\)</span>
+<span class="math notranslate nohighlight">\([ I \cdot A = A ]\)</span></p>
 <p>Di mana ( A ) adalah matriks sembarang dengan ukuran yang sesuai, dan ( I ) adalah matriks identitas.</p>
-<p>Sebagai contoh, matriks identitas berukuran $<span class="math notranslate nohighlight">\(( 2 \times 2 )\)</span>$ adalah:</p>
+<p>Sebagai contoh, matriks identitas berukuran <span class="math notranslate nohighlight">\(( 2 \times 2 )\)</span> adalah:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{bmatrix}
 1 &amp; 0 \\
 0 &amp; 1
 \end{bmatrix}\end{split}\]</div>
-<p>Sedangkan matriks identitas berukuran $<span class="math notranslate nohighlight">\(( 3 \times 3 )\)</span>$ adalah:</p>
+<p>Sedangkan matriks identitas berukuran <span class="math notranslate nohighlight">\(( 3 \times 3 )\)</span> adalah:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{bmatrix}
 1 &amp; 0 &amp; 0 \\
@@ -492,7 +491,7 @@ $<span class="math notranslate nohighlight">\([ k \cdot c = c \cdot k ]\)</span>
 <p>Matriks persegi <span class="math notranslate nohighlight">\(A\)</span> memiliki invers <span class="math notranslate nohighlight">\(A^{-1}\)</span> jika memenuhi: <span class="math notranslate nohighlight">\(A.A^{-1} = A.^{-1} = I\)</span> Artinya, perkalian antara matriks dan inversnya menghasilkan matriks identitas.</p>
 <p>Syarat suatu matriks memiliki invers:</p>
 <p>Matriks harus berbentuk persegi (jumlah baris sama dengan jumlah kolom).</p>
-<p>Determinan matriks tidak boleh nol, yaitu:$<span class="math notranslate nohighlight">\([ det (A) \neq \cdot 0)\)</span>$</p>
+<p>Determinan matriks tidak boleh nol, yaitu:<span class="math notranslate nohighlight">\([ det (A) \neq \cdot 0)\)</span></p>
 </section>
 <section id="menghitung-invers-dengan-obe">
 <h3>5. Menghitung Invers dengan OBE<a class="headerlink" href="#menghitung-invers-dengan-obe" title="Link to this heading">#</a></h3>
@@ -533,7 +532,11 @@ $<span class="math notranslate nohighlight">\([ k \cdot c = c \cdot k ]\)</span>
 <section id="bentuk-persamaan-3-variabel">
 <h4>1. Bentuk persamaan 3 variabel<a class="headerlink" href="#bentuk-persamaan-3-variabel" title="Link to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
-\[2X_1 + X_2 + 3X_3 = 5$$$$X_1 - 2X_2 + X_3 = 2$$$$3X_1 + X_2 - X_3 = 3\]</div>
+\[2X_1 + X_2 + 3X_3 = 5\]</div>
+<div class="math notranslate nohighlight">
+\[X_1 - 2X_2 + X_3 = 2\]</div>
+<div class="math notranslate nohighlight">
+\[3X_1 + X_2 - X_3 = 3\]</div>
 </section>
 <section id="bentuk-matriks-dari-persamaan-3-variabel">
 <h4>2. Bentuk matriks dari persamaan 3 variabel<a class="headerlink" href="#bentuk-matriks-dari-persamaan-3-variabel" title="Link to this heading">#</a></h4>
@@ -579,7 +582,9 @@ $<span class="math notranslate nohighlight">\([ k \cdot c = c \cdot k ]\)</span>
 <li><p>Langkah 4.2 Ubah baris 2 kolom 1 dan baris 3 kolom 1 menjadi 0</p></li>
 </ul>
 <div class="math notranslate nohighlight">
-\[R_2 = R_2 - R_1 $$$$R_3 = R_3 - 3R_1 \]</div>
+\[R_2 = R_2 - R_1\]</div>
+<div class="math notranslate nohighlight">
+\[R_3 = R_3 - 3R_1\]</div>
 <div class="math notranslate nohighlight">
 \[\begin{split}A =\begin{bmatrix}
 1 &amp; 0.5 &amp; 1.5 &amp; | 0.5 &amp; 0 &amp; 0 \\
@@ -587,13 +592,17 @@ $<span class="math notranslate nohighlight">\([ k \cdot c = c \cdot k ]\)</span>
 0 &amp; -0.5 &amp; -5.5 &amp; | -1.5 &amp; 0 &amp; 1
 \end{bmatrix}\end{split}\]</div>
 <ul class="simple">
-<li><p>Langkah 4.3 Jadikan baris 2 kolom 2 bernilai 1
-$<span class="math notranslate nohighlight">\(R_2 = R_2 / - 2.5 \)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(A =\begin{bmatrix}
+<li><p>Langkah 4.3 Jadikan baris 2 kolom 2 bernilai 1</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[R_2 = R_2 / - 2.5\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}A =\begin{bmatrix}
 1 &amp; 0.5 &amp; 1.5 &amp; | 0.5 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0.2 &amp; | 0.2 &amp; -0.4 &amp; 0\\
 0 &amp; -0.5 &amp; -5.5 &amp; | -1.5 &amp; 0 &amp; 1
-\end{bmatrix}\)</span>$</p></li>
+\end{bmatrix}\end{split}\]</div>
+<ul class="simple">
 <li><p>Langkah 4.4 Ubah baris 1 kolom 2 menjadi 0</p></li>
 </ul>
 <div class="math notranslate nohighlight">
@@ -639,9 +648,11 @@ $<span class="math notranslate nohighlight">\(R_2 = R_2 / - 2.5 \)</span><span c
 \end{bmatrix}\end{split}\]</div>
 </section>
 <section id="setelah-itu-gunakan-rumus-invers-ax-b">
-<h4>6. Setelah itu gunakan rumus invers$<span class="math notranslate nohighlight">\((Ax= B)\)</span>$<a class="headerlink" href="#setelah-itu-gunakan-rumus-invers-ax-b" title="Link to this heading">#</a></h4>
-<div class="math notranslate nohighlight">
-\[Ax = B$$$$A^{-1}Ax = A^{-1}B$$$$Ix = A^{-1}B$$$$x= A^{-1}B\]</div>
+<h4>6. Setelah itu gunakan rumus invers<span class="math notranslate nohighlight">\((Ax= B)\)</span><a class="headerlink" href="#setelah-itu-gunakan-rumus-invers-ax-b" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\(Ax = B\)</span>
+<span class="math notranslate nohighlight">\(A^{-1}Ax = A^{-1}B\)</span>
+<span class="math notranslate nohighlight">\(Ix = A^{-1}B\)</span>
+<span class="math notranslate nohighlight">\(x= A^{-1}B\)</span></p>
 <p>hasil perhitungan dari persamaan  variabel</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}A^{-1} =
@@ -748,7 +759,7 @@ z\end{bmatrix}= \begin{bmatrix}
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-utama-dari-persamaan-3-variabel">3. Bentuk matriks utama dari persamaan 3 variabel</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-dengan-matriks-diagonalnya-dari-persamaan-3-variabel">4. Bentuk matriks dengan matriks diagonalnya dari persamaan 3 variabel</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#gunakan-penyelesaian-dengan-metode-eliminasi-gauss">5. Gunakan penyelesaian dengan metode Eliminasi Gauss</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setelah-itu-gunakan-rumus-invers-ax-b">6. Setelah itu gunakan rumus invers$<span class="math notranslate nohighlight">\((Ax= B)\)</span>$</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#setelah-itu-gunakan-rumus-invers-ax-b">6. Setelah itu gunakan rumus invers<span class="math notranslate nohighlight">\((Ax= B)\)</span></a></li>
 </ul>
 </li>
 </ul>
