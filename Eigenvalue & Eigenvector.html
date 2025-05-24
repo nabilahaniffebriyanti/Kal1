@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to my book nabila hanif febriyanti &#8212; My sample book</title>
+    <title>EIGENVALUE &amp; EIGENVECTOR &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Eigenvalue & Eigenvector';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="SISTEM PERSAMAAN LINEAR" href="sistem%20persamaan%20linier.html" />
+    <link rel="prev" title="REFLEKSI" href="refleksi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,13 +174,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to my book nabila hanif febriyanti
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sistem%20persamaan%20linier.html">SISTEM PERSAMAAN LINEAR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="eliminasi%20gauss.html">ELIMINASI GAUSS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
@@ -190,7 +188,7 @@
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">TRANSFORMASI LINIER</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">EIGENVALUE &amp; EIGENVECTOR</a></li>
 </ul>
 
     </div>
@@ -262,7 +260,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEigenvalue & Eigenvector.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +290,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Eigenvalue & Eigenvector.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,7 +361,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -374,11 +374,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to my book nabila hanif febriyanti</h1>
+    <h1>EIGENVALUE & EIGENVECTOR</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">DEFINISI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvector-eigenvelues">Cara mencari eigenvector &amp; eigenvelues</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvector-eigenvelues">Langkah-langkah mencari eigenvector &amp; eigenvelues :</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -388,21 +403,169 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-my-book-nabila-hanif-febriyanti">
-<h1>Welcome to my book nabila hanif febriyanti<a class="headerlink" href="#welcome-to-my-book-nabila-hanif-febriyanti" title="Link to this heading">#</a></h1>
-<p>ini adalah halaman web saya yang mencangkup catatan materi tentang mata kuliah komputasi aljabar linier yang meliputi definisi, grafik, contoh dan soal.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="sistem%20persamaan%20linier.html">SISTEM PERSAMAAN LINEAR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eliminasi%20gauss.html">ELIMINASI GAUSS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi%20matriks.html">TRANSFORMASI MATRIKS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">TRANSFORMASI LINIER</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html#tugas">TUGAS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-eigenvector">
+<h1>EIGENVALUE &amp; EIGENVECTOR<a class="headerlink" href="#eigenvalue-eigenvector" title="Link to this heading">#</a></h1>
+<section id="definisi">
+<h2>DEFINISI<a class="headerlink" href="#definisi" title="Link to this heading">#</a></h2>
+<p><strong>Eigenvalue</strong> adalah vektor yang arahnya tidak berubah (atau terbalik ) oleh transformasi linear tertentu.</p>
+<p><strong>Eigenvector</strong> adalah Vektor yang mempertahankan arahnya setelah transformasi linear, hanya berubah dengan faktor skalar.</p>
+<p>Misalkan :
+A adalah matriks persegi <span class="math notranslate nohighlight">\((n×n)\)</span>. Jika ada sebuah vektor tak nol v dan sebuah skalar λ sehingga:
+$<span class="math notranslate nohighlight">\(Av=λv\)</span>$
+maka:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A\)</span> = Matriks</p></li>
+<li><p><span class="math notranslate nohighlight">\(v\)</span> = eigenvektor</p></li>
+<li><p><span class="math notranslate nohighlight">\(λ\)</span> = eigenvalue (skalar)</p></li>
 </ul>
+<p>Artinya,tranformasi matriks terhadap vektor hanya mengubah skala vektor tersebut dikali dengan,arahnya tetap.</p>
+<section id="cara-mencari-eigenvector-eigenvelues">
+<h3>Cara mencari eigenvector &amp; eigenvelues<a class="headerlink" href="#cara-mencari-eigenvector-eigenvelues" title="Link to this heading">#</a></h3>
+<p>Misal:
+Matriks <span class="math notranslate nohighlight">\(A\)</span> berukuran <span class="math notranslate nohighlight">\(n\)</span> x <span class="math notranslate nohighlight">\(n\)</span>
+$<span class="math notranslate nohighlight">\(A = \begin{pmatrix}
+a &amp; b \\
+c &amp; d
+\end{pmatrix}\)</span>$</p>
+<section id="langkah-langkah-mencari-eigenvector-eigenvelues">
+<h4>Langkah-langkah mencari eigenvector &amp; eigenvelues :<a class="headerlink" href="#langkah-langkah-mencari-eigenvector-eigenvelues" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Tentukan persamaan karateristik
+rumus :
+$<span class="math notranslate nohighlight">\(|A - \lambda I| = 0\)</span>$</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(I\)</span> = matriks identitas berukuran sama dengan</p>
+<p><span class="math notranslate nohighlight">\(\lambda\)</span> = eigenvalue</p>
+<ol class="arabic" start="2">
+<li><p>Hitung Determinan Matriks
+Untuk matriks 2x2 :
+$<span class="math notranslate nohighlight">\(\begin{vmatrix}
+a-\lambda &amp; b \\
+c &amp; d-\lambda
+\end{vmatrix}
+= 0\)</span>$</p>
+<p>Hitung determinannya :</p>
+</li>
+</ol>
+<div class="math notranslate nohighlight">
+\[(a-\lambda)(d-\lambda) - (b \times c) = 0\]</div>
+<p>Hasilnya adalah persamaan kuadrat (kalau 2×2) atau polinomial (kalau lebih besar).</p>
+<ol class="arabic simple" start="3">
+<li><p>Cari Nilai Eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span>
+Selesaikan persamaan hasil langkah 2 untuk mendapatkan nilai-nilai <span class="math notranslate nohighlight">\(\lambda\)</span>.</p></li>
+<li><p>Substitusi Setiap Nilai <span class="math notranslate nohighlight">\(\lambda\)</span> ke Matriks <span class="math notranslate nohighlight">\((A - \lambda I)\)</span>
+Untuk masing-masing <span class="math notranslate nohighlight">\(\lambda\)</span> cari :
+$<span class="math notranslate nohighlight">\((A - \lambda I) \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\)</span>$</p></li>
+<li><p>Cari Hubungan Antara Variabel (x dan y)</p></li>
+</ol>
+<ul class="simple">
+<li><p>Ambil salah satu baris dari matriks hasil substitusi.</p></li>
+<li><p>Buat persamaan linear antara variabel.</p></li>
+<li><p>Sederhanakan, sehingga salah satu variabel bisa diekspresikan terhadap yang lain.</p></li>
+</ul>
+<ol class="arabic simple" start="6">
+<li><p>Tulis Eigenvector-nya</p></li>
+</ol>
+<ul class="simple">
+<li><p>Tulis eigenvector dalam bentuk:
+$<span class="math notranslate nohighlight">\(\mathbf{v} = k \begin{pmatrix} x \\ y \end{pmatrix}\)</span>$</p></li>
+<li><p><span class="math notranslate nohighlight">\(k\)</span> adalah konstanta skalar bebas (karena solusi homogen, boleh dikalikan skalar).
+Biasanya diambil nilai sederhana (misal salah satu komponen = 1 atau -1).</p></li>
+</ul>
+</section>
+</section>
+<section id="contoh-pada-matriks">
+<h3>Contoh pada matriks :<a class="headerlink" href="#contoh-pada-matriks" title="Link to this heading">#</a></h3>
+<p>Cari eigenvalue dan eigenvector dari :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{pmatrix} 4 &amp; 2 \\ 1 &amp; 3 \end{pmatrix}\end{split}\]</div>
+<p>Langkah-Langkah penyelesaian :</p>
+<ol class="arabic simple">
+<li><p>Tentukan Persamaan Karakteristik</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[|A - \lambda I| = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}= \begin{vmatrix} 4-\lambda &amp; 2 \\ 1 &amp; 3-\lambda \end{vmatrix} = 0\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Hitung Determinannya
+Gunakan rumus determinan:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[(4-\lambda)(3-\lambda) - (2 \times 1) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[= (12 - 4\lambda - 3\lambda + \lambda^2) - 2 = 0\]</div>
+<div class="math notranslate nohighlight">
+\[= \lambda^2 - 7\lambda + 10 = 0\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Cari Nilai Eigenvalue</p></li>
+</ol>
+<p>Persamaan kuadrat :</p>
+<div class="math notranslate nohighlight">
+\[\lambda^2 - 7\lambda + 10 = 0\]</div>
+<p>Faktorkan :</p>
+<div class="math notranslate nohighlight">
+\[(\lambda-5)(\lambda-2) = 0\]</div>
+<p>Jadi:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span></p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Subtitusi ke <span class="math notranslate nohighlight">\((A - \lambda I) v = 0\)</span>
+untuk <span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span>
+$<span class="math notranslate nohighlight">\(A - 5I = \begin{pmatrix} 4-5 &amp; 2 \\ 1 &amp; 3-5 \end{pmatrix}
+= \begin{pmatrix} -1 &amp; 2 \\ 1 &amp; -2 \end{pmatrix}\)</span><span class="math notranslate nohighlight">\(
+untuk \)</span>\lambda_2 = 2<span class="math notranslate nohighlight">\(
+\)</span><span class="math notranslate nohighlight">\(A - 2I = \begin{pmatrix} 4-2 &amp; 2 \\ 1 &amp; 3-2 \end{pmatrix}
+= \begin{pmatrix} 2 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}\)</span>$</p></li>
+<li><p>Cari Hubungan Variabel</p></li>
+</ol>
+<p>Dari baris pertama <span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span>:
+$<span class="math notranslate nohighlight">\(-1 \times x + 2y = 0\)</span><span class="math notranslate nohighlight">\( \)</span><span class="math notranslate nohighlight">\(x = 2y\)</span>$</p>
+<p>Dari baris pertama <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span>:
+$<span class="math notranslate nohighlight">\(2x + 2y = 0\)</span><span class="math notranslate nohighlight">\( \)</span><span class="math notranslate nohighlight">\(x = -y\)</span>$</p>
+<ol class="arabic simple" start="6">
+<li><p>Tentukan Eigenvector</p></li>
+</ol>
+<p>untuk <span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span>
+Ambil nilai sederhana, misal:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(y = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x = 2\)</span></p></li>
+</ul>
+<p>jadi :
+$<span class="math notranslate nohighlight">\(\mathbf{v_1} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span>$</p>
+<p>untuk <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span>
+Ambil nilai sederhana, misal:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(y = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x = -1\)</span></p></li>
+</ul>
+<p>jadi :
+$<span class="math notranslate nohighlight">\(\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}\)</span>$</p>
+<p>Kesimpulan :
+Eigenvalue
+$<span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span><span class="math notranslate nohighlight">\( \)</span><span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span><span class="math notranslate nohighlight">\(
+Eigenvector
+\)</span><span class="math notranslate nohighlight">\(\mathbf{v_1} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}\end{split}\]</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
+<span class="n">eigenvalues</span><span class="p">,</span><span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;eigenvalues :</span><span class="si">{</span><span class="n">eigenvalues</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;eigenvector :</span><span class="se">\n</span><span class="si">{</span><span class="n">eigenvectors</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">eigenvalues</span> <span class="p">:[</span><span class="mf">5.</span> <span class="mf">2.</span><span class="p">]</span>
+<span class="n">eigenvector</span> <span class="p">:</span>
+<span class="p">[[</span> <span class="mf">0.89442719</span> <span class="o">-</span><span class="mf">0.70710678</span><span class="p">]</span>
+ <span class="p">[</span> <span class="mf">0.4472136</span>   <span class="mf">0.70710678</span><span class="p">]]</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -435,14 +598,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="sistem%20persamaan%20linier.html"
-       title="next page">
+    <a class="left-prev"
+       href="refleksi.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SISTEM PERSAMAAN LINEAR</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">REFLEKSI</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -450,6 +613,28 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">DEFINISI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvector-eigenvelues">Cara mencari eigenvector &amp; eigenvelues</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvector-eigenvelues">Langkah-langkah mencari eigenvector &amp; eigenvelues :</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
