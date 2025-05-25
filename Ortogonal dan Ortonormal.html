@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>EIGENVALUE &amp; EIGENVECTOR &#8212; My sample book</title>
+    <title>ORTOGONAL &amp; ORTONORMAL &#8212; My sample book</title>
   
   
   
@@ -59,11 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Eigenvalue & Eigenvector';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Ortogonal dan Ortonormal';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ORTOGONAL &amp; ORTONORMAL" href="Ortogonal%20dan%20Ortonormal.html" />
-    <link rel="prev" title="REFLEKSI" href="refleksi.html" />
+    <link rel="prev" title="EIGENVALUE &amp; EIGENVECTOR" href="Eigenvalue%20%26%20Eigenvector.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -189,8 +188,8 @@
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">TRANSFORMASI LINIER</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">EIGENVALUE &amp; EIGENVECTOR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ORTOGONAL &amp; ORTONORMAL</a></li>
 </ul>
 
     </div>
@@ -262,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEigenvalue & Eigenvector.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FOrtogonal dan Ortonormal.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +291,7 @@
       
       
       
-      <li><a href="_sources/Eigenvalue & Eigenvector.md" target="_blank"
+      <li><a href="_sources/Ortogonal dan Ortonormal.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -376,7 +375,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>EIGENVALUE & EIGENVECTOR</h1>
+    <h1>ORTOGONAL & ORTONORMAL</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,11 +386,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">DEFINISI</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvector-eigenvelues">Cara mencari eigenvector &amp; eigenvelues</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvector-eigenvelues">Langkah-langkah mencari eigenvector &amp; eigenvelues :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvector-untuk-lambda-1-3-2-sqrt-2">Cari Eigenvector Untuk : <span class="math notranslate nohighlight">\(\lambda_1 = 3 + 2\sqrt{2}\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvector-untuk-lambda-2-3-2-sqrt2">Cari Eigenvector untuk <span class="math notranslate nohighlight">\(\lambda_2 = 3 - 2 \sqrt2\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-ortonormal-dari-eigenvektor">Hasil Akhir Ortonormal dari Eigenvektor</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
 </ul>
 </li>
 </ul>
@@ -405,177 +405,211 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="eigenvalue-eigenvector">
-<h1>EIGENVALUE &amp; EIGENVECTOR<a class="headerlink" href="#eigenvalue-eigenvector" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="ortogonal-ortonormal">
+<h1>ORTOGONAL &amp; ORTONORMAL<a class="headerlink" href="#ortogonal-ortonormal" title="Link to this heading">#</a></h1>
 <section id="definisi">
 <h2>DEFINISI<a class="headerlink" href="#definisi" title="Link to this heading">#</a></h2>
-<p><strong>Eigenvalue</strong> adalah vektor yang arahnya tidak berubah (atau terbalik ) oleh transformasi linear tertentu.</p>
-<p><strong>Eigenvector</strong> adalah Vektor yang mempertahankan arahnya setelah transformasi linear, hanya berubah dengan faktor skalar.</p>
-<p>Misalkan :
-A adalah matriks persegi <span class="math notranslate nohighlight">\((n×n)\)</span>. Jika ada sebuah vektor tak nol v dan sebuah skalar λ sehingga:</p>
-<div class="math notranslate nohighlight">
-\[Av=λv\]</div>
-<p>maka:</p>
+<p><strong>Ortogonal</strong> Adalah Dua vektor dikatakan ortogonal jika hasil dot product (perkalian titik) antara keduanya adalah nol.
+Secara matematis, jika ada dua vektor <span class="math notranslate nohighlight">\(u\)</span> dan <span class="math notranslate nohighlight">\(v\)</span> maka:
+<span class="math notranslate nohighlight">\(u\)</span> . <span class="math notranslate nohighlight">\(v\)</span> <span class="math notranslate nohighlight">\(= 0\)</span></p>
+<p>Artinya:</p>
 <ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(A\)</span> = Matriks</p></li>
-<li><p><span class="math notranslate nohighlight">\(v\)</span> = eigenvektor</p></li>
-<li><p><span class="math notranslate nohighlight">\(λ\)</span> = eigenvalue (skalar)</p></li>
+<li><p>Vektor <span class="math notranslate nohighlight">\(u\)</span> &amp; <span class="math notranslate nohighlight">\(v\)</span> saling tegak lurus (membentuk sudut 90°).</p></li>
+<li><p>Tidak harus memiliki panjang (norma) tertentu.</p></li>
 </ul>
-<p>Artinya,tranformasi matriks terhadap vektor hanya mengubah skala vektor tersebut dikali dengan,arahnya tetap.</p>
-<section id="cara-mencari-eigenvector-eigenvelues">
-<h3>Cara mencari eigenvector &amp; eigenvelues<a class="headerlink" href="#cara-mencari-eigenvector-eigenvelues" title="Link to this heading">#</a></h3>
-<p>Misal:</p>
-<p>Matriks <span class="math notranslate nohighlight">\(A\)</span> berukuran <span class="math notranslate nohighlight">\(n\)</span> x <span class="math notranslate nohighlight">\(n\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}\end{split}\]</div>
-<section id="langkah-langkah-mencari-eigenvector-eigenvelues">
-<h4>Langkah-langkah mencari eigenvector &amp; eigenvelues :<a class="headerlink" href="#langkah-langkah-mencari-eigenvector-eigenvelues" title="Link to this heading">#</a></h4>
+<p><strong>Ortonormal</strong> Adalah Sekumpulan vektor dikatakan ortonormal jika mereka ortogonal satu sama lain dan masing-masing memiliki panjang (norma) 1.</p>
+<p>Syarat Ortonormal :</p>
+<p>Misal :</p>
+<p><span class="math notranslate nohighlight">\(\vec{u}, \vec{v} \in \mathbb{R}^n\)</span></p>
 <ol class="arabic simple">
-<li><p>Tentukan persamaan karateristik
-rumus :</p></li>
+<li><p>Ortogonal antar vektor</p></li>
 </ol>
-<div class="math notranslate nohighlight">
-\[|A - \lambda I| = 0\]</div>
-<p><span class="math notranslate nohighlight">\(I\)</span> = matriks identitas berukuran sama dengan</p>
-<p><span class="math notranslate nohighlight">\(\lambda\)</span> = eigenvalue</p>
+<p><span class="math notranslate nohighlight">\(\mathbf{u} \cdot \mathbf{v} = 0 \ \text{jika} \ \mathbf{u} \neq \mathbf{v}\)</span></p>
+<p>Jika vektor berbeda, hasil dot product-nya harus nol (tegak lurus).</p>
 <ol class="arabic simple" start="2">
-<li><p>Hitung Determinan Matriks
-Untuk matriks 2x2 :</p></li>
+<li><p>Norma 1 untuk setiap vektor</p></li>
 </ol>
+<p><span class="math notranslate nohighlight">\(||\mathbf{u}|| = 1 \ \text{dan} \ ||\mathbf{v}|| = 1\)</span></p>
+<p>Setiap vektor harus memiliki panjang (norma) = 1</p>
+<hr class="docutils" />
+<section id="contoh">
+<h3>Contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
+<p>Misalkan kita punya matriks:</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{pmatrix} 5 &amp; 2 \\ 2 &amp; 1 \end{pmatrix}\)</span></p>
+<p>Langkah 1: Cari Determinan <span class="math notranslate nohighlight">\((A - \lambda I)\)</span></p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{vmatrix} a-\lambda &amp; b \\ c &amp; d-\lambda \end{vmatrix} = 0\end{split}\]</div>
-<p>Hitung determinannya :</p>
+\[\begin{split}\text{det}(A - \lambda I) = \begin{vmatrix} 5 - \lambda &amp; 2 \\ 2 &amp; 1 - \lambda \end{vmatrix}\end{split}\]</div>
+<p>Hitung determinannya:</p>
 <div class="math notranslate nohighlight">
-\[(a-\lambda)(d-\lambda) - (b \times c) = 0\]</div>
-<p>Hasilnya adalah persamaan kuadrat (kalau 2×2) atau polinomial (kalau lebih besar).</p>
-<ol class="arabic simple" start="3">
-<li><p>Cari Nilai Eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span></p></li>
-</ol>
-<p>Selesaikan persamaan hasil langkah 2 untuk mendapatkan nilai-nilai <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
-<ol class="arabic simple" start="4">
-<li><p>Substitusi Setiap Nilai <span class="math notranslate nohighlight">\(\lambda\)</span> ke Matriks <span class="math notranslate nohighlight">\((A - \lambda I)\)</span></p></li>
-</ol>
-<p>Untuk masing-masing <span class="math notranslate nohighlight">\(\lambda\)</span> cari :</p>
+\[= (5-\lambda)(1-\lambda) - (2 \times 2)\]</div>
 <div class="math notranslate nohighlight">
-\[\begin{split}(A - \lambda I) \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="5">
-<li><p>Cari Hubungan Antara Variabel (x dan y)</p></li>
-</ol>
+\[= (5-\lambda)(1-\lambda) - 4 \]</div>
+<div class="math notranslate nohighlight">
+\[= (5-\lambda)(1-\lambda) - 4\]</div>
+<div class="math notranslate nohighlight">
+\[= (5 \times 1) - 5\lambda - \lambda + \lambda^2 - 4 \]</div>
+<div class="math notranslate nohighlight">
+\[= 5 - 5\lambda - \lambda + \lambda^2 - 4\]</div>
+<div class="math notranslate nohighlight">
+\[= \lambda^2 - 6\lambda + 1 \]</div>
+<p>Langkah 2: Gunakan Rumus Kuadrat</p>
+<p>Pakai rumus:</p>
+<div class="math notranslate nohighlight">
+\[\lambda = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</div>
+<p>Dengan :</p>
 <ul class="simple">
-<li><p>Ambil salah satu baris dari matriks hasil substitusi.</p></li>
-<li><p>Buat persamaan linear antara variabel.</p></li>
-<li><p>Sederhanakan, sehingga salah satu variabel bisa diekspresikan terhadap yang lain.</p></li>
+<li><p><span class="math notranslate nohighlight">\(a = 1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(b = -6\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(c = 1\)</span></p></li>
 </ul>
-<ol class="arabic simple" start="6">
-<li><p>Tulis Eigenvector-nya</p></li>
-</ol>
-<ul class="simple">
-<li><p>Tulis eigenvector dalam bentuk:</p></li>
-</ul>
+<p>Maka:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{v} = k \begin{pmatrix} x \\ y \end{pmatrix}\end{split}\]</div>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(k\)</span> adalah konstanta skalar bebas (karena solusi homogen, boleh dikalikan skalar).
-Biasanya diambil nilai sederhana (misal salah satu komponen = 1 atau -1).</p></li>
-</ul>
+\[\lambda = \frac{-(-6) \pm \sqrt{(-6)^2 - 4(1)(1)}}{2(1)}\]</div>
+<div class="math notranslate nohighlight">
+\[= \frac{6 \pm \sqrt{36 - 4}}{2} \]</div>
+<div class="math notranslate nohighlight">
+\[= \frac{6 \pm \sqrt{32}}{2}\]</div>
+<div class="math notranslate nohighlight">
+\[= \frac{6 \pm 4\sqrt{2}}{2} \]</div>
+<div class="math notranslate nohighlight">
+\[= 3 \pm 2\sqrt{2}\]</div>
+<p>Hasil Akhir:</p>
+<p>Jadi eigenvalue-nya:</p>
+<div class="math notranslate nohighlight">
+\[\lambda_1 = 3 + 2\sqrt{2}, \ \lambda_2 = 3 - 2\sqrt{2}\]</div>
+<section id="cari-eigenvector-untuk-lambda-1-3-2-sqrt-2">
+<h4>Cari Eigenvector Untuk : <span class="math notranslate nohighlight">\(\lambda_1 = 3 + 2\sqrt{2}\)</span><a class="headerlink" href="#cari-eigenvector-untuk-lambda-1-3-2-sqrt-2" title="Link to this heading">#</a></h4>
+<p>Hitung :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A - \lambda_1 I = \begin{pmatrix} 5 - \lambda_1 &amp; 2 \\ 2 &amp; 1 - \lambda_1 \end{pmatrix}\end{split}\]</div>
+<p>Nilainya :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}= \begin{pmatrix} 5 - (3 + 2\sqrt{2}) &amp; 2 \\ 2 &amp; 1 - (3 + 2\sqrt{2}) \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[= \begin{pmatrix} 2 - 2\sqrt{2} &amp; 2 \ 2 &amp; -2 - 2\sqrt{2} \end{pmatrix} \]</div>
+<p>Ambil salah satu persamaan (misal baris pertama):</p>
+<div class="math notranslate nohighlight">
+\[(2 - 2\sqrt{2}) x + 2y = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\Rightarrow y = (\sqrt{2} - 1) x\]</div>
+<p>Maka eigenvector-nya (belum dinormalisasi):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{v_1} = \begin{pmatrix} 1 \\ \sqrt{2} - 1 \end{pmatrix}\end{split}\]</div>
+<p>Hitung Normanya :</p>
+<div class="math notranslate nohighlight">
+\[\|\vec{v_1}\| = \sqrt{1^2 + (\sqrt{2} - 1)^2}\]</div>
+<div class="math notranslate nohighlight">
+\[= \sqrt{1 + (3 - 2\sqrt{2})}\]</div>
+<div class="math notranslate nohighlight">
+\[= \sqrt{4 - 2\sqrt{2}}\]</div>
+<p>Nilainya kira-kira :</p>
+<div class="math notranslate nohighlight">
+\[\approx 1.111\]</div>
+<p>Normalisasi :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u_1} = \frac{1}{1.111} \begin{pmatrix} 1 \\ \sqrt{2} - 1 \end{pmatrix}\end{split}\]</div>
+<p>Hasil kira-kira :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u_1} \approx \begin{pmatrix} 0.900 \\ 0.434 \end{pmatrix}\end{split}\]</div>
+<p>Hasil Akhir :</p>
+<p>Jadi, eigenvector untuk <span class="math notranslate nohighlight">\(\lambda_1 = 3 + 2 \sqrt2\)</span>  adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u_1} \approx \begin{pmatrix} 0.900 \\ 0.434 \end{pmatrix}\end{split}\]</div>
 </section>
-</section>
-<section id="contoh-pada-matriks">
-<h3>Contoh pada matriks :<a class="headerlink" href="#contoh-pada-matriks" title="Link to this heading">#</a></h3>
-<p>Cari eigenvalue dan eigenvector dari :</p>
+<section id="cari-eigenvector-untuk-lambda-2-3-2-sqrt2">
+<h4>Cari Eigenvector untuk <span class="math notranslate nohighlight">\(\lambda_2 = 3 - 2 \sqrt2\)</span><a class="headerlink" href="#cari-eigenvector-untuk-lambda-2-3-2-sqrt2" title="Link to this heading">#</a></h4>
+<p>Hitung :</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}A = \begin{pmatrix} 4 &amp; 2 \\ 1 &amp; 3 \end{pmatrix}\end{split}\]</div>
-<p>Langkah-Langkah penyelesaian :</p>
+\[\begin{split}A - \lambda_2 I = \begin{pmatrix} 5 - \lambda_2 &amp; 2 \\ 2 &amp; 1 - \lambda_2 \end{pmatrix}\end{split}\]</div>
+<p>Nilainya :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}= \begin{pmatrix} 5 - (3 - 2\sqrt{2}) &amp; 2 \\ 2 &amp; 1 - (3 - 2\sqrt{2}) \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[= \begin{pmatrix} 2 + 2\sqrt{2} &amp; 2 \ 2 &amp; -2 + 2\sqrt{2} \end{pmatrix}\]</div>
+<p>Ambil salah satu persamaan (misal baris pertama):</p>
+<div class="math notranslate nohighlight">
+\[(2 + 2\sqrt{2})x + 2y = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\Rightarrow y = -(1 + \sqrt{2}) x\]</div>
+<p>Maka eigenvector-nya (belum dinormalisasi) :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{v_2} = \begin{pmatrix} 1 \\ -(1+\sqrt{2}) \end{pmatrix}\end{split}\]</div>
+<p>Hitung Normanya :</p>
+<div class="math notranslate nohighlight">
+\[\|\vec{v_2}\| = \sqrt{1^2 + (-(1+\sqrt{2}))^2}\]</div>
+<div class="math notranslate nohighlight">
+\[= \sqrt{1 + (1+2+2\sqrt{2})}\]</div>
+<div class="math notranslate nohighlight">
+\[= \sqrt{4 + 2\sqrt{2}}\]</div>
+<p>Nilainya kira-kira :</p>
+<div class="math notranslate nohighlight">
+\[\approx 2.613\]</div>
+<p>Normalisasi :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u_2} = \frac{1}{2.613} \begin{pmatrix} 1 \\ -(1+\sqrt{2}) \end{pmatrix}\end{split}\]</div>
+<p>Hasil kira-kira :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u_2} \approx \begin{pmatrix} 0.383 \\ -0.924 \end{pmatrix}\end{split}\]</div>
+<p>Hasil Akhir :</p>
+<p>Jadi, eigenvector untuk <span class="math notranslate nohighlight">\(\lambda_2 = 3 - 2 \sqrt2\)</span>  adalah :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u_2} \approx \begin{pmatrix} 0.383 \\ -0.924 \end{pmatrix}\end{split}\]</div>
+</section>
+<section id="hasil-akhir-ortonormal-dari-eigenvektor">
+<h4>Hasil Akhir Ortonormal dari Eigenvektor<a class="headerlink" href="#hasil-akhir-ortonormal-dari-eigenvektor" title="Link to this heading">#</a></h4>
+<p>Dua vektor ortonormal hasil normalisasi eigenvektor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{u}_1 = \begin{pmatrix} 0.900 \\ 0.434 \end{pmatrix}, \ 
+\vec{u}_2 = \begin{pmatrix} 0.383 \\ -0.924 \end{pmatrix}\end{split}\]</div>
+<p>Verifikasi :</p>
 <ol class="arabic simple">
-<li><p>Tentukan Persamaan Karakteristik</p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{u}_1 ,\vec{u}_2 =0\)</span> (ortogonal)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\|\vec{u_1}\| = 1\)</span> <span class="math notranslate nohighlight">\(\|\vec{u_2}\| = 1\)</span> (norma 1)</p></li>
+<li><p>Jadi keduanya adalah ortonormal</p></li>
+<li><p>Dan merupakan eigenvektor dari matriks A</p></li>
 </ol>
-<div class="math notranslate nohighlight">
-\[|A - \lambda I| = 0\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}= \begin{vmatrix} 4-\lambda &amp; 2 \\ 1 &amp; 3-\lambda \end{vmatrix} = 0\end{split}\]</div>
-<ol class="arabic simple" start="2">
-<li><p>Hitung Determinannya
-Gunakan rumus determinan:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[(4-\lambda)(3-\lambda) - (2 \times 1) = 0\]</div>
-<div class="math notranslate nohighlight">
-\[= (12 - 4\lambda - 3\lambda + \lambda^2) - 2 = 0\]</div>
-<div class="math notranslate nohighlight">
-\[= \lambda^2 - 7\lambda + 10 = 0\]</div>
-<ol class="arabic simple" start="3">
-<li><p>Cari Nilai Eigenvalue</p></li>
-</ol>
-<p>Persamaan kuadrat :</p>
-<div class="math notranslate nohighlight">
-\[\lambda^2 - 7\lambda + 10 = 0\]</div>
-<p>Faktorkan :</p>
-<div class="math notranslate nohighlight">
-\[(\lambda-5)(\lambda-2) = 0\]</div>
-<p>Jadi:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span></p></li>
-</ul>
-<ol class="arabic simple" start="4">
-<li><p>Subtitusi ke <span class="math notranslate nohighlight">\((A - \lambda I) v = 0\)</span>
-untuk <span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span></p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[\begin{split}A - 5I = \begin{pmatrix} 4-5 &amp; 2 \\ 1 &amp; 3-5 \end{pmatrix} = \begin{pmatrix} -1 &amp; 2 \\ 1 &amp; -2 \end{pmatrix}\end{split}\]</div>
-<p>untuk <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span></p>
-<div class="math notranslate nohighlight">
-\[\begin{split}A - 2I = \begin{pmatrix} 4-2 &amp; 2 \\ 1 &amp; 3-2 \end{pmatrix} = \begin{pmatrix} 2 &amp; 2 \\ 1 &amp; 1 \end{pmatrix}\end{split}\]</div>
-<ol class="arabic simple" start="5">
-<li><p>Cari Hubungan Variabel</p></li>
-</ol>
-<p>Dari baris pertama <span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[-1 \times x + 2y = 0$$ $$x = 2y\]</div>
-<p>Dari baris pertama <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[2x + 2y = 0$$ $$x = -y\]</div>
-<ol class="arabic simple" start="6">
-<li><p>Tentukan Eigenvector</p></li>
-</ol>
-<p>untuk <span class="math notranslate nohighlight">\(\lambda_1 = 5\)</span>
-Ambil nilai sederhana, misal:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(y = 1\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(x = 2\)</span></p></li>
-</ul>
-<p>jadi :
-$<span class="math notranslate nohighlight">\(\mathbf{v_1} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span>$</p>
-<p>untuk <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span>
-Ambil nilai sederhana, misal:</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(y = 1\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(x = -1\)</span></p></li>
-</ul>
-<p>jadi :
-$<span class="math notranslate nohighlight">\(\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}\)</span>$</p>
-<p>Kesimpulan :</p>
-<p>Eigenvalue</p>
-<div class="math notranslate nohighlight">
-\[\lambda_1 = 5$$ $$\lambda_2 = 2\]</div>
-<p>Eigenvector</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{v_1} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\end{split}\]</div>
-<div class="math notranslate nohighlight">
-\[\begin{split}\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}\end{split}\]</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">]])</span>
-<span class="n">eigenvalues</span><span class="p">,</span><span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;eigenvalues :</span><span class="si">{</span><span class="n">eigenvalues</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;eigenvector :</span><span class="se">\n</span><span class="si">{</span><span class="n">eigenvectors</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Matriks simetris baru</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Cari eigenvalue dan eigenvektor</span>
+<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+
+<span class="c1"># Tampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalue:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvektor (sebelum dinormalisasi):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors</span><span class="p">)</span>
+
+<span class="c1"># Normalisasi eigenvektor untuk jadi ortonormal</span>
+<span class="n">normalized_vectors</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">eigenvectors</span><span class="o">.</span><span class="n">T</span><span class="p">:</span>  <span class="c1"># per kolom</span>
+    <span class="n">norm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+    <span class="n">normalized_vectors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v</span> <span class="o">/</span> <span class="n">norm</span><span class="p">)</span>
+
+<span class="c1"># Konversi ke array NumPy</span>
+<span class="n">normalized_vectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">normalized_vectors</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Eigenvektor yang sudah dinormalisasi (ortonormal):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">normalized_vectors</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">eigenvalues</span> <span class="p">:[</span><span class="mf">5.</span> <span class="mf">2.</span><span class="p">]</span>
-<span class="n">eigenvector</span> <span class="p">:</span>
-<span class="p">[[</span> <span class="mf">0.89442719</span> <span class="o">-</span><span class="mf">0.70710678</span><span class="p">]</span>
- <span class="p">[</span> <span class="mf">0.4472136</span>   <span class="mf">0.70710678</span><span class="p">]]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Eigenvalue</span><span class="p">:</span>
+<span class="p">[</span><span class="mf">5.82842712</span> <span class="mf">0.17157288</span><span class="p">]</span>
+
+<span class="n">Eigenvektor</span> <span class="p">(</span><span class="n">sebelum</span> <span class="n">dinormalisasi</span><span class="p">):</span>
+<span class="p">[[</span> <span class="mf">0.92387953</span> <span class="o">-</span><span class="mf">0.38268343</span><span class="p">]</span>
+ <span class="p">[</span> <span class="mf">0.38268343</span>  <span class="mf">0.92387953</span><span class="p">]]</span>
+
+<span class="n">Eigenvektor</span> <span class="n">yang</span> <span class="n">sudah</span> <span class="n">dinormalisasi</span> <span class="p">(</span><span class="n">ortonormal</span><span class="p">):</span>
+<span class="p">[[</span> <span class="mf">0.92387953</span>  <span class="mf">0.38268343</span><span class="p">]</span>
+ <span class="p">[</span><span class="o">-</span><span class="mf">0.38268343</span>  <span class="mf">0.92387953</span><span class="p">]]</span>
 </pre></div>
 </div>
+</section>
 </section>
 </section>
 </section>
@@ -611,22 +645,13 @@ $<span class="math notranslate nohighlight">\(\mathbf{v_2} = \begin{pmatrix} -1 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="refleksi.html"
+       href="Eigenvalue%20%26%20Eigenvector.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">REFLEKSI</p>
+        <p class="prev-next-title">EIGENVALUE &amp; EIGENVECTOR</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Ortogonal%20dan%20Ortonormal.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ORTOGONAL &amp; ORTONORMAL</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -645,11 +670,12 @@ $<span class="math notranslate nohighlight">\(\mathbf{v_2} = \begin{pmatrix} -1 
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">DEFINISI</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvector-eigenvelues">Cara mencari eigenvector &amp; eigenvelues</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvector-eigenvelues">Langkah-langkah mencari eigenvector &amp; eigenvelues :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvector-untuk-lambda-1-3-2-sqrt-2">Cari Eigenvector Untuk : <span class="math notranslate nohighlight">\(\lambda_1 = 3 + 2\sqrt{2}\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvector-untuk-lambda-2-3-2-sqrt2">Cari Eigenvector untuk <span class="math notranslate nohighlight">\(\lambda_2 = 3 - 2 \sqrt2\)</span></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir-ortonormal-dari-eigenvektor">Hasil Akhir Ortonormal dari Eigenvektor</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
 </ul>
 </li>
 </ul>
