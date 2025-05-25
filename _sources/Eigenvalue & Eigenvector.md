@@ -113,6 +113,7 @@ Jadi:
 - $\lambda_2 = 2$
 
 4. Subtitusi ke $(A - \lambda I) v = 0$
+
 untuk $\lambda_1 = 5$
 
 $$A - 5I = \begin{pmatrix} 4-5 & 2 \\ 1 & 3-5 \end{pmatrix} = \begin{pmatrix} -1 & 2 \\ 1 & -2 \end{pmatrix}$$
@@ -125,11 +126,15 @@ $$A - 2I = \begin{pmatrix} 4-2 & 2 \\ 1 & 3-2 \end{pmatrix} = \begin{pmatrix} 2 
 
 Dari baris pertama $\lambda_1 = 5$:
 
-$$-1 \times x + 2y = 0$$ $$x = 2y$$
+$$-1 \times x + 2y = 0$$ 
+
+$$x = 2y$$
 
 Dari baris pertama $\lambda_2 = 2$: 
 
-$$2x + 2y = 0$$ $$x = -y$$
+$$2x + 2y = 0$$ 
+
+$$x = -y$$
 
 6. Tentukan Eigenvector
 
@@ -154,7 +159,9 @@ Kesimpulan :
 
 Eigenvalue 
 
-$$\lambda_1 = 5$$ $$\lambda_2 = 2$$
+$$\lambda_1 = 5$$ 
+
+$$\lambda_2 = 2$$
 
 Eigenvector
 
