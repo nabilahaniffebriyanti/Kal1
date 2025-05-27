@@ -75,6 +75,55 @@ $$\mathbf{v} = k \begin{pmatrix} x \\ y \end{pmatrix}$$
 - $k$ adalah konstanta skalar bebas (karena solusi homogen, boleh dikalikan skalar).
 Biasanya diambil nilai sederhana (misal salah satu komponen = 1 atau -1).
 
+### Contoh 
+
+$$Matriks A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
+
+- Mencari Nilai Eigen : $$Av=λv$$
+
+$$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
+
+- Nilai Eigen $\lambda_1 = 3$
+
+- Vektor Eigen $v_1 = \begin{pmatrix} 1 & 1 \end{pmatrix}$
+
+- Nilai Eigen $\lambda_2 = 1$
+
+- Vektor Eigen $v_2 = \begin{pmatrix} -1 & 1 \end{pmatrix}$
+
+```
+# Codenya.
+import numpy as np
+
+# Matriks A
+A = np.array([[2, 1],[1, 2]])
+
+# Hitung eigenvalue dan eigenvector
+eigenvalues, eigenvectors = np.linalg.eig(A)
+
+# Urutkan indeks berdasarkan eigenvalue dari besar ke kecil
+sorted_indices = np.argsort(eigenvalues)[::-1]
+
+# Urutkan eigenvalue dan eigenvector sesuai indeks
+eigenvalues_sorted = eigenvalues[sorted_indices]
+eigenvectors_sorted = eigenvectors[:, sorted_indices]
+
+# Cetak hasil
+print("Eigenvalues (terurut):")
+print(eigenvalues_sorted)
+print(" ")
+print("Eigenvectors (mengikuti eigenvalues):")
+print(eigenvectors_sorted)
+```
+```
+Eigenvalues (terurut):
+[3. 1.]
+ 
+Eigenvectors (mengikuti eigenvalues):
+[[ 0.70710678 -0.70710678]
+ [ 0.70710678  0.70710678]]
+```
+
 ### Contoh pada matriks : 
 
 Cari eigenvalue dan eigenvector dari :
@@ -145,6 +194,7 @@ Ambil nilai sederhana, misal:
 - $x = 2$
 
 jadi : 
+
 $$\mathbf{v_1} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$$
 
 untuk $\lambda_2 = 2$
@@ -153,6 +203,7 @@ Ambil nilai sederhana, misal:
 - $x = -1$
 
 jadi : 
+
 $$\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}$$
 
 Kesimpulan : 

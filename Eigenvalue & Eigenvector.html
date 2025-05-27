@@ -191,6 +191,7 @@
 <li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">EIGENVALUE &amp; EIGENVECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Perkalian%20Titik%20%28Dot%20Product%29.html">Perkalian Titik (Dot Product)</a></li>
 </ul>
 
     </div>
@@ -391,6 +392,7 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvector-eigenvelues">Langkah-langkah mencari eigenvector &amp; eigenvelues :</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
 </ul>
 </li>
@@ -480,6 +482,54 @@ Biasanya diambil nilai sederhana (misal salah satu komponen = 1 atau -1).</p></l
 </ul>
 </section>
 </section>
+<section id="contoh">
+<h3>Contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}Matriks A = \begin{pmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{pmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Mencari Nilai Eigen : $<span class="math notranslate nohighlight">\(Av=λv\)</span>$</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{pmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{pmatrix}\end{split}\]</div>
+<ul class="simple">
+<li><p>Nilai Eigen <span class="math notranslate nohighlight">\(\lambda_1 = 3\)</span></p></li>
+<li><p>Vektor Eigen <span class="math notranslate nohighlight">\(v_1 = \begin{pmatrix} 1 &amp; 1 \end{pmatrix}\)</span></p></li>
+<li><p>Nilai Eigen <span class="math notranslate nohighlight">\(\lambda_2 = 1\)</span></p></li>
+<li><p>Vektor Eigen <span class="math notranslate nohighlight">\(v_2 = \begin{pmatrix} -1 &amp; 1 \end{pmatrix}\)</span></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Codenya.</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Matriks A</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
+
+<span class="c1"># Hitung eigenvalue dan eigenvector</span>
+<span class="n">eigenvalues</span><span class="p">,</span> <span class="n">eigenvectors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="c1"># Urutkan indeks berdasarkan eigenvalue dari besar ke kecil</span>
+<span class="n">sorted_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">eigenvalues</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Urutkan eigenvalue dan eigenvector sesuai indeks</span>
+<span class="n">eigenvalues_sorted</span> <span class="o">=</span> <span class="n">eigenvalues</span><span class="p">[</span><span class="n">sorted_indices</span><span class="p">]</span>
+<span class="n">eigenvectors_sorted</span> <span class="o">=</span> <span class="n">eigenvectors</span><span class="p">[:,</span> <span class="n">sorted_indices</span><span class="p">]</span>
+
+<span class="c1"># Cetak hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvalues (terurut):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvalues_sorted</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eigenvectors (mengikuti eigenvalues):&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">eigenvectors_sorted</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Eigenvalues</span> <span class="p">(</span><span class="n">terurut</span><span class="p">):</span>
+<span class="p">[</span><span class="mf">3.</span> <span class="mf">1.</span><span class="p">]</span>
+ 
+<span class="n">Eigenvectors</span> <span class="p">(</span><span class="n">mengikuti</span> <span class="n">eigenvalues</span><span class="p">):</span>
+<span class="p">[[</span> <span class="mf">0.70710678</span> <span class="o">-</span><span class="mf">0.70710678</span><span class="p">]</span>
+ <span class="p">[</span> <span class="mf">0.70710678</span>  <span class="mf">0.70710678</span><span class="p">]]</span>
+</pre></div>
+</div>
+</section>
 <section id="contoh-pada-matriks">
 <h3>Contoh pada matriks :<a class="headerlink" href="#contoh-pada-matriks" title="Link to this heading">#</a></h3>
 <p>Cari eigenvalue dan eigenvector dari :</p>
@@ -548,16 +598,18 @@ Ambil nilai sederhana, misal:</p>
 <li><p><span class="math notranslate nohighlight">\(y = 1\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(x = 2\)</span></p></li>
 </ul>
-<p>jadi :
-$<span class="math notranslate nohighlight">\(\mathbf{v_1} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\)</span>$</p>
+<p>jadi :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{v_1} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\end{split}\]</div>
 <p>untuk <span class="math notranslate nohighlight">\(\lambda_2 = 2\)</span>
 Ambil nilai sederhana, misal:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(y = 1\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(x = -1\)</span></p></li>
 </ul>
-<p>jadi :
-$<span class="math notranslate nohighlight">\(\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}\)</span>$</p>
+<p>jadi :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}\end{split}\]</div>
 <p>Kesimpulan :</p>
 <p>Eigenvalue</p>
 <div class="math notranslate nohighlight">
@@ -655,6 +707,7 @@ $<span class="math notranslate nohighlight">\(\mathbf{v_2} = \begin{pmatrix} -1 
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvector-eigenvelues">Langkah-langkah mencari eigenvector &amp; eigenvelues :</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
 </ul>
 </li>
