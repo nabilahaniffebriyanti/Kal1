@@ -85,11 +85,11 @@ $$A = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$$
 
 - Nilai Eigen $\lambda_1 = 3$
 
-- Vektor Eigen $v_1 = \mathbf{v_1} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$
+- Vektor Eigen $\mathbf{v_1} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$
 
 - Nilai Eigen $\lambda_2 = 1$
 
-- Vektor Eigen $v_2 = \mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}$
+- Vektor Eigen $\mathbf{v_2} = \begin{pmatrix} -1 \\ 1 \end{pmatrix}$
 
 ```
 # Codenya.
