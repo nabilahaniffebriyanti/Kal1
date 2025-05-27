@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - My sample book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Perkalian Titik (Dot Product) &#8212; My sample book</title>
   
   
   
@@ -55,12 +57,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Perkalian Titik (Dot Product)';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ORTOGONAL &amp; ORTONORMAL" href="Ortogonal%20dan%20Ortonormal.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -92,7 +94,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -122,8 +124,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -180,7 +180,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="sistem%20persamaan%20linier.html">SISTEM PERSAMAAN LINEAR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="eliminasi%20gauss.html">ELIMINASI GAUSS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
@@ -190,7 +190,7 @@
 <li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Perkalian%20Titik%20%28Dot%20Product%29.html">Perkalian Titik (Dot Product)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Perkalian Titik (Dot Product)</a></li>
 </ul>
 
     </div>
@@ -262,7 +262,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPerkalian Titik (Dot Product).html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -274,6 +274,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Perkalian Titik (Dot Product).md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -315,7 +363,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -324,42 +374,109 @@ document.write(`
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Perkalian Titik (Dot Product)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">CONTOH</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-titik-dan-panjang-vektor">Perkalian titik dan Panjang Vektor</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="perkalian-titik-dot-product">
+<h1>Perkalian Titik (Dot Product)<a class="headerlink" href="#perkalian-titik-dot-product" title="Link to this heading">#</a></h1>
+<section id="definisi">
+<h2>Definisi<a class="headerlink" href="#definisi" title="Link to this heading">#</a></h2>
+<p><strong>Dot product</strong> (atau hasil skalar) adalah cara mengalikan dua vektor, dan hasilnya adalah sebuah angka (skalar). atau Perkalian titik itu cara buat ngukur seberapa searah dua vektor.</p>
+<p>Untuk vektor-vektor dua dimensi v dan w, hasil kali titik (v · w) dapat didefinisikan sebagai bilangan skalar sebagai berikut:</p>
+<p>Misal dua vektor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{v} = \begin{bmatrix} v_1 \\ v_2 \end{bmatrix}, \quad \mathbf{w} = \begin{bmatrix} w_1 \\ w_2 \end{bmatrix}\end{split}\]</div>
+<p>Perkalian titiknya (dot product) dari 2 vektor adalah:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{v} \cdot \mathbf{w} = v_1 w_1 + v_2 w_2\]</div>
+<section id="contoh">
+<h3>CONTOH<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
+<p>Langkah pertama : menentukan dua vektor</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}\end{split}\]</div>
+<p>Langkah kedua : hitung dot product</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{v} . \vec{w} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}
+\cdot \begin{bmatrix} -1 \\ 2 \end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[= 2 \times -1 + 1 \times 2\]</div>
+<div class="math notranslate nohighlight">
+\[= -2 + 2\]</div>
+<div class="math notranslate nohighlight">
+\[= 0\]</div>
+<p>jika hasil dari dua vektor tersebut 0 maka kedua vektor tersebut memiliki garis yang sejajar dan memiliki sudut 90°</p>
+<p><img alt="vektor u,v" src="https://hackmd.io/_uploads/SkdBwP7zge.png" /></p>
+<p><a class="reference external" href="https://">https://www.geogebra.org/classic/tnsb5s84</a></p>
+</section>
+</section>
+<section id="perkalian-titik-dan-panjang-vektor">
+<h2>Perkalian titik dan Panjang Vektor<a class="headerlink" href="#perkalian-titik-dan-panjang-vektor" title="Link to this heading">#</a></h2>
+<p><strong>Panjang vektor</strong> adalah seberapa “besar” vektor tersebut, yang diukur dari titik asal (0,0) ke titik ujung vektor. Istilah lainnya adalah <strong>norma</strong>.</p>
+<p>panjang vektor atau jarak titik dapat dihitung menggunakan Teorema Pythagoras, dengan rumus :</p>
+<div class="math notranslate nohighlight">
+\[\text{Panjang vektor } \mathbf{x} = \sqrt{x^2 + y^2}.\]</div>
+<p>Dimana x hasil dari vektor yang berada di sumbu x dan y juga sebaliknya hasil dari vektor yang berada di sumbu y.</p>
+<div class="math notranslate nohighlight">
+\[{u} = (2, 1), \quad {v} = (-1, 2)\]</div>
+<div class="math notranslate nohighlight">
+\[|\vec{u}| = \sqrt{2^2 + 1^2}\]</div>
+<div class="math notranslate nohighlight">
+\[= \sqrt{5}\]</div>
+<div class="math notranslate nohighlight">
+\[|\vec{v}| = \sqrt{(-1)^2 + 2^2}\]</div>
+<div class="math notranslate nohighlight">
+\[= \sqrt{5}\]</div>
+<p>Artinya: kita kuadratkan setiap angka, lalu jumlahkan semuanya, dan ambil akar kuadrat dari hasil penjumlahan itu.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
 
               
               
@@ -368,12 +485,40 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Ortogonal%20dan%20Ortonormal.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">ORTOGONAL &amp; ORTONORMAL</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">CONTOH</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-titik-dan-panjang-vektor">Perkalian titik dan Panjang Vektor</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
