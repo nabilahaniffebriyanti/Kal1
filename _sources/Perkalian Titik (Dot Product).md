@@ -39,6 +39,42 @@ jika hasil dari dua vektor tersebut 0 maka kedua vektor tersebut memiliki garis 
 
 [https://www.geogebra.org/classic/tnsb5s84](https://)
 
+#### CONTOH BASIS ADA 2 MACAM YAITU : 
+
+##### 1. Basis 2D ada 2 yaitu : 
+
+$$\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}$$
+
+dot product yaitu : 
+
+$$\begin{bmatrix} 1 \\ 0 \end{bmatrix}
+\cdot \begin{bmatrix} 0 \\ 1 \end{bmatrix}$$
+
+$$= 1 \cdot 0 + 0 \cdot 1$$ 
+
+$$= 0$$
+
+##### 2. Basis 3D ada 3 yaitu : 
+
+$$\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}$$
+
+dot product yaitu : 
+
+$$b1 =\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}, b2 =\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}, b3 =\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} $$
+
+$$b1 \cdot b2 =\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix},\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix} = (1 \cdot 0) + (0 \cdot 1)+(0 \cdot 0) =0$$
+
+$$b1 \cdot b3 =\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix},\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} = (1 \cdot 0) + (0 \cdot 0)+(0 \cdot 1) =0$$
+
+$$b2 \cdot b3 =\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix},\begin{bmatrix} 0 \\ 0 \\ 1 \end{bmatrix} = (0 \cdot 0) + (1 \cdot 0)+(0 \cdot 1) =0$$
+
 ## Perkalian titik dan Panjang Vektor
 **Panjang vektor** adalah seberapa "besar" vektor tersebut, yang diukur dari titik asal (0,0) ke titik ujung vektor. Istilah lainnya adalah **norma**.
 
