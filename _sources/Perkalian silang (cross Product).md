@@ -261,8 +261,7 @@ $$= | -3 |$$
 
 $$= 3$$
 
-<iframe src="https://www.geogebra.org/material/iframe/id/rgrwwaga/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
-width="800" height="600" style="border:0px;"> </iframe>
+<iframe src="https://www.geogebra.org/material/iframe/id/rgrwwaga/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
 
 ### 2. Tentukan luas jajaran genjang yang ditentukan oleh vektor $\vec{u} =  \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad \vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}$
 
@@ -283,8 +282,7 @@ $$= | 6 |$$
 
 $$= 6$$
 
-<iframe src="https://www.geogebra.org/material/iframe/id/kuxps2ca/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
-width="800" height="600" style="border:0px;"> </iframe>
+<iframe src="https://www.geogebra.org/material/iframe/id/kuxps2ca/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
 
 ### 3. Tentukan luas segitiga dengan titik-titik sudut (0, 0, 0), (1, 3, -1), dan (2, 1, 1). 
 
@@ -333,8 +331,7 @@ $$= \frac{1}{2} \times 5 \sqrt{2}$$
 
 $$= \frac{5 \sqrt{2}}{2}$$
 
-<iframe src="https://www.geogebra.org/material/iframe/id/hy4uwy6j/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
-width="800" height="600" style="border:0px;"> </iframe>
+<iframe src="https://www.geogebra.org/material/iframe/id/hy4uwy6j/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
 
 ### 4. Tentukan luas segitiga dengan titik-titik sudut (5, 2, -1), (3, 6, 2), dan (1, 0, 4).
 
@@ -388,5 +385,4 @@ $$= \frac{1}{2} \times 6 \sqrt{30}$$
 
 $$= 3 \sqrt{30}$$
 
-<iframe src="https://www.geogebra.org/material/iframe/id/fpnusgp8/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
-width="800" height="600" style="border:0px;"> </iframe>
+<iframe src="https://www.geogebra.org/material/iframe/id/fpnusgp8/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
