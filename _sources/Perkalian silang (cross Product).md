@@ -48,11 +48,13 @@ $$= (u_2 v_3 - u_3 v_2)\vec{i} - (u_1 v_3 - u_3 v_1)\vec{j} + (u_1 v_2 - u_2 v_1
 1. $\vec{u} \times \vec{v} = -(\vec{v} \times \vec{u})$  {Anticommutative Property}
 
 2. a. $(\vec{u} + \vec{v}) \times \vec{w} = \vec{u} \times \vec{w} + \vec{v} \times \vec{w}$
+
 b. $\vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$ {Distributive Properties}
     
 3. $c(\vec{u} \times \vec{v}) = (c \vec{u}) \times \vec{v} = \vec{u} \times (c \vec{v})$
     
 4. a. $(\vec{u} \times \vec{v}) \cdot \vec{u} = 0$ {Orthogonality Properties}
+
 b. $(\vec{u} \times \vec{v}) \cdot \vec{v} = 0$ 
     
 5. $\vec{u} \times \vec{0} = \vec{0}$
@@ -112,7 +114,7 @@ $$= \begin{bmatrix}
 2 \cdot 1 - 1 \cdot 1
 \end{bmatrix} = \begin{bmatrix} 0 \\ -1 \\ 1 \end{bmatrix} = - \begin{bmatrix} 0 \\ 1 \\ 1 \end{bmatrix} $$
 
-[https://www.geogebra.org/classic/kmr9nwad](https://www.geogebra.org/classic/kmr9nwad)
+<iframe src="https://www.geogebra.org/material/iframe/id/kmr9nwad/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
 
 ## HASIL KALI SILANG DAN SUDUT
 
