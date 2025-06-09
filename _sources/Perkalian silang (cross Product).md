@@ -49,13 +49,13 @@ $$= (u_2 v_3 - u_3 v_2)\vec{i} - (u_1 v_3 - u_3 v_1)\vec{j} + (u_1 v_2 - u_2 v_1
 
 2. a. $(\vec{u} + \vec{v}) \times \vec{w} = \vec{u} \times \vec{w} + \vec{v} \times \vec{w}$
 
-b. $\vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$ {Distributive Properties}
+   b. $\vec{u} \times (\vec{v} + \vec{w}) = \vec{u} \times \vec{v} + \vec{u} \times \vec{w}$ {Distributive Properties}
     
 3. $c(\vec{u} \times \vec{v}) = (c \vec{u}) \times \vec{v} = \vec{u} \times (c \vec{v})$
     
 4. a. $(\vec{u} \times \vec{v}) \cdot \vec{u} = 0$ {Orthogonality Properties}
 
-b. $(\vec{u} \times \vec{v}) \cdot \vec{v} = 0$ 
+   b. $(\vec{u} \times \vec{v}) \cdot \vec{v} = 0$ 
     
 5. $\vec{u} \times \vec{0} = \vec{0}$
     
@@ -261,7 +261,8 @@ $$= | -3 |$$
 
 $$= 3$$
 
-[https://www.geogebra.org/classic/rgrwwaga](https://www.geogebra.org/classic/rgrwwaga)
+<iframe src="https://www.geogebra.org/material/iframe/id/rgrwwaga/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
+width="800" height="600" style="border:0px;"> </iframe>
 
 ### 2. Tentukan luas jajaran genjang yang ditentukan oleh vektor $\vec{u} =  \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad \vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}$
 
@@ -282,7 +283,8 @@ $$= | 6 |$$
 
 $$= 6$$
 
-[https://www.geogebra.org/classic/kuxps2ca](https://www.geogebra.org/classic/kuxps2ca)
+<iframe src="https://www.geogebra.org/material/iframe/id/kuxps2ca/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
+width="800" height="600" style="border:0px;"> </iframe>
 
 ### 3. Tentukan luas segitiga dengan titik-titik sudut (0, 0, 0), (1, 3, -1), dan (2, 1, 1). 
 
@@ -331,7 +333,8 @@ $$= \frac{1}{2} \times 5 \sqrt{2}$$
 
 $$= \frac{5 \sqrt{2}}{2}$$
 
-[https://www.geogebra.org/classic/hy4uwy6j](https://www.geogebra.org/classic/hy4uwy6j)
+<iframe src="https://www.geogebra.org/material/iframe/id/hy4uwy6j/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
+width="800" height="600" style="border:0px;"> </iframe>
 
 ### 4. Tentukan luas segitiga dengan titik-titik sudut (5, 2, -1), (3, 6, 2), dan (1, 0, 4).
 
@@ -385,4 +388,5 @@ $$= \frac{1}{2} \times 6 \sqrt{30}$$
 
 $$= 3 \sqrt{30}$$
 
-[https://www.geogebra.org/classic/fpnusgp8](https://www.geogebra.org/classic/fpnusgp8)
+<iframe src="https://www.geogebra.org/material/iframe/id/fpnusgp8/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" 
+width="800" height="600" style="border:0px;"> </iframe>
