@@ -16,9 +16,11 @@ MEMBUAT PENJELASAN SOLUSI ATAU PENYELESAIAN PERSAMAAN 3 VARIABEL DENGAN MENGGUNA
 
 Selesaikan sistem persamaan linier berikut :
  
-    x + y + z = 6
-    2x + 2y + 3z = 14
-    3x + 4y + 2z = 13
+$$x + y + z = 6$$
+
+$$2x + 2y + 3z = 14$$
+
+$$3x + 4y + 2z = 13$$
 
 Berikut adalah langkah-langkah menyelesaikan sistem persamaan linear diatas menggunakan metode eliminasi Gauss.
 
@@ -121,9 +123,11 @@ Jika sistem persamaan memiliki satu solusi unik, maka sistem tersebut konsisten 
 
 Contoh sistem yang memiliki satu solusi unik:
 
-    x + y + z = 6
-    2x + 2y + 3z = 14
-    3x + 4y + 2z = 13
+$$x + y + z = 6$$
+
+$$2x + 2y + 3z = 14$$
+
+$$3x + 4y + 2z = 13$$
 
 Setelah di lakukan penyelesaian menggunakan metode eliminasi Gauss, sistem ini menghasilkan solusi yang jelas, misalnya:
 
@@ -136,14 +140,15 @@ Contoh sistem yang inkonsisten:
 
 Sistem persamaan berikut:
 
-    x + y = 3
-    2x + 2y = 7
+$$x + y = 3$$
+
+$$2x + 2y = 7$$
 
 tidak memiliki solusi karena persamaan kedua sebenarnya adalah hasil dari persamaan pertama yang dikalikan 2, tetapi dengan konstanta yang berbeda (6 vs 7). Hal ini membuat sistem ini tidak konsisten dan tidak mungkin memiliki nilai  dan  yang memenuhi kedua persamaan secara bersamaan.
  
 Jika kita melakukan eliminasi Gauss pada sistem ini, kita akan mendapatkan baris yang bertentangan, seperti:
 
-    0𝑥 + 0𝑦 = 1
+$$0𝑥 + 0𝑦 = 1$$
 
 Ini menunjukkan bahwa sistem tersebut tidak ada solusi.
 
@@ -154,23 +159,22 @@ Contoh sistem yang memiliki tak terhingga banyak solusi:
 
 sistem persamaan berikut : 
 
-    𝑥 + 𝑦 = 2
-    2𝑥 + 2𝑦 = 4
+$$𝑥 + 𝑦 = 2$$
+
+$$2𝑥 + 2𝑦 = 4$$
 
 memiliki tak hingga banyak solusi karena persamaan kedua sebenarnya adalah hasil dari persamaan pertama yang dikalikan 2. Ini berarti kedua persamaan sebenarnya sama dan merepresentasikan garis yang sama di bidang koordinat.
 
 Setelah eliminasi Gauss, kita akan mendapatkan baris yang tidak memberikan informasi baru, seperti:
 
-    0𝑥 + 0𝑦 = 0
+$$0𝑥 + 0𝑦 = 0$$
     
 Ini menunjukkan bahwa sistem ini memiliki tak terhingga banyak solusi, dan solusinya dapat ditulis dalam bentuk parameter, seperti:
 
-    𝑥 = 2 − 𝑦
+$$𝑥 = 2 − 𝑦$$
     
 Dengan demikian, 𝑦 dapat berupa sembarang nilai, dan 𝑥 bergantung pada nilai 𝑦
 
 Hasil grafis dari geogebra
 
-![gegogebra](https://hackmd.io/_uploads/S1gNJnaiikl.png)
-
-[https://www.geogebra.org/classic/xjzddhvh](https://)
+<iframe src="https://www.geogebra.org/material/iframe/id/xjzddhvh/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
