@@ -35,9 +35,7 @@ $$= 0$$
 
 jika hasil dari dua vektor tersebut 0 maka kedua vektor tersebut memiliki garis yang sejajar dan memiliki sudut 90°
 
-![vektor u,v](https://hackmd.io/_uploads/SkdBwP7zge.png)
-
-[https://www.geogebra.org/classic/tnsb5s84](https://)
+<iframe src="https://www.geogebra.org/material/iframe/id/tnsb5s84/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
 
 #### CONTOH BASIS ADA 2 MACAM YAITU : 
 
