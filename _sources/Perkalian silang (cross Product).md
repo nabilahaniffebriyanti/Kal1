@@ -331,6 +331,8 @@ $$= \frac{1}{2} \times 5 \sqrt{2}$$
 
 $$= \frac{5 \sqrt{2}}{2}$$
 
+<iframe src="https://www.geogebra.org/material/iframe/id/hy4uwy6j/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
+
 ### 4. Tentukan luas segitiga dengan titik-titik sudut (5, 2, -1), (3, 6, 2), dan (1, 0, 4).
 
 Luas Segitiga di Ruang 3D
