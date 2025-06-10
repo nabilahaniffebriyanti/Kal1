@@ -384,3 +384,5 @@ $$L = \frac{1}{2} \times |\vec{u} \times \vec{v}|$$
 $$= \frac{1}{2} \times 6 \sqrt{30}$$
 
 $$= 3 \sqrt{30}$$
+
+<iframe src="https://www.geogebra.org/material/iframe/id/fpnusgp8/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
