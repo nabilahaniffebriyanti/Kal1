@@ -62,6 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'transformasi linier';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="REFLEKSI" href="refleksi.html" />
     <link rel="prev" title="TRANSFORMASI MATRIKS" href="transformasi%20matriks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -186,7 +187,11 @@
 <li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20matriks.html">TRANSFORMASI MATRIKS</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">TRANSFORMASI LINIER</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Perkalian%20Titik%20%28Dot%20Product%29.html">Perkalian Titik (Dot Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Perkalian%20silang%20%28cross%20Product%29.html">Perkalian Silang (cross Product)</a></li>
 </ul>
 
     </div>
@@ -382,33 +387,29 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TRANSFORMASI LINIER</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-transformasi-linier">Apa Transformasi Linier??</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-vektor">1. Penjumlahan Vektor :</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar">2. Perkalian Skalar :</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-tranformasi-linier">1. membuktikan bahwa <span class="math notranslate nohighlight">\(T =(v1,v2)=(v1+v2,v1)\)</span> adalah tranformasi linier.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Penjumlahan Vektor :</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Perkalian skalar</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-tranformasi-linier">1. membuktikan bahwa <span class="math notranslate nohighlight">\(T =(v1,v2)=(v1+v2,v1)\)</span> adalah tranformasi linier.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Penjumlahan Vektor :</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Perkalian skalar</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-2-contoh-titik-masing-masing">2. Buat 2 contoh titik masing-masing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-reflection-about-the-x-axis">a. Reflection about the x-axis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-reflection-about-the-y-axis">b. Reflection about the y-axis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-reflection-about-the-line-y-x">c. Reflection about the line y=x</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-reflection-about-the-line-y-x">d. Reflection about the line y = -x</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-reflection-about-the-origin">e. Reflection about the origin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-2-contoh-titik-masing-masing">2. Buat 2 contoh titik masing-masing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-reflection-about-the-x-axis">a. Reflection about the x-axis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-reflection-about-the-y-axis">b. Reflection about the y-axis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-reflection-about-the-line-y-x">c. Reflection about the line y=x</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-reflection-about-the-line-y-x">d. Reflection about the line y = -x</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#e-reflection-about-the-origin">e. Reflection about the origin</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -443,14 +444,13 @@ W : codomain T</p>
 <p>Fungsi tersebut harus bersifat homogen, yang artinya mengalikan vektor dengan skalar yang akan menghasilkan hasil yang sama dengan mengalikan hasil fungsi tersebut dengan skalar yang sama.</p>
 </section>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="tugas">
-<h1>TUGAS<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h1>
+<section id="tugas">
+<h2>TUGAS<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h2>
 <section id="membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-tranformasi-linier">
-<h2>1. membuktikan bahwa <span class="math notranslate nohighlight">\(T =(v1,v2)=(v1+v2,v1)\)</span> adalah tranformasi linier.<a class="headerlink" href="#membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-tranformasi-linier" title="Link to this heading">#</a></h2>
+<h3>1. membuktikan bahwa <span class="math notranslate nohighlight">\(T =(v1,v2)=(v1+v2,v1)\)</span> adalah tranformasi linier.<a class="headerlink" href="#membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-tranformasi-linier" title="Link to this heading">#</a></h3>
 <p>PEMBUKTIANNYA DENGAN 2 SYARAT :</p>
 <section id="id1">
-<h3>1. Penjumlahan Vektor :<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<h4>1. Penjumlahan Vektor :<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
 <p>Syaratnya: <span class="math notranslate nohighlight">\(T(\mathbf{u} + \mathbf{v}) = T(\mathbf{u}) + T(\mathbf{v})\)</span></p>
 <p>Kalau kita jumlahkan 2 vektor dulu baru ditransformasi, hasilnya harus sama dengan kalau masing-masing vektor ditransformasi dulu, lalu hasilnya dijumlahkan.</p>
 <p>Misalkan :</p>
@@ -471,7 +471,7 @@ W : codomain T</p>
 \[= T(\mathbf{u}) + T(\mathbf{v})\]</div>
 </section>
 <section id="id2">
-<h3>2. Perkalian skalar<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<h4>2. Perkalian skalar<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <p>Syaratnya : <span class="math notranslate nohighlight">\(T(c\mathbf{v})=cT (\mathbf{v})\)</span></p>
 <p>Misalkan:
 <span class="math notranslate nohighlight">\(\mathbf{v} = v1 , v2\)</span>
@@ -494,9 +494,9 @@ W : codomain T</p>
 </section>
 </section>
 <section id="buat-2-contoh-titik-masing-masing">
-<h2>2. Buat 2 contoh titik masing-masing<a class="headerlink" href="#buat-2-contoh-titik-masing-masing" title="Link to this heading">#</a></h2>
+<h3>2. Buat 2 contoh titik masing-masing<a class="headerlink" href="#buat-2-contoh-titik-masing-masing" title="Link to this heading">#</a></h3>
 <section id="a-reflection-about-the-x-axis">
-<h3>a. Reflection about the x-axis<a class="headerlink" href="#a-reflection-about-the-x-axis" title="Link to this heading">#</a></h3>
+<h4>a. Reflection about the x-axis<a class="headerlink" href="#a-reflection-about-the-x-axis" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Matriks
 <span class="math notranslate nohighlight">\(\begin{bmatrix}
@@ -545,7 +545,7 @@ W : codomain T</p>
 <p>Jadi hasilnya B’(-2, -5)</p>
 </section>
 <section id="b-reflection-about-the-y-axis">
-<h3>b. Reflection about the y-axis<a class="headerlink" href="#b-reflection-about-the-y-axis" title="Link to this heading">#</a></h3>
+<h4>b. Reflection about the y-axis<a class="headerlink" href="#b-reflection-about-the-y-axis" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Matriks
 <span class="math notranslate nohighlight">\(\begin{bmatrix}
@@ -594,7 +594,7 @@ W : codomain T</p>
 <p>Jadi hasilnya B’(3, -7)</p>
 </section>
 <section id="c-reflection-about-the-line-y-x">
-<h3>c. Reflection about the line y=x<a class="headerlink" href="#c-reflection-about-the-line-y-x" title="Link to this heading">#</a></h3>
+<h4>c. Reflection about the line y=x<a class="headerlink" href="#c-reflection-about-the-line-y-x" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Matriks
 <span class="math notranslate nohighlight">\(\begin{bmatrix}
@@ -648,7 +648,7 @@ W : codomain T</p>
 <p>Jadi hasilnya B’(7, -3)</p>
 </section>
 <section id="d-reflection-about-the-line-y-x">
-<h3>d. Reflection about the line y = -x<a class="headerlink" href="#d-reflection-about-the-line-y-x" title="Link to this heading">#</a></h3>
+<h4>d. Reflection about the line y = -x<a class="headerlink" href="#d-reflection-about-the-line-y-x" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Matriks
 <span class="math notranslate nohighlight">\(\begin{bmatrix}
@@ -702,7 +702,7 @@ W : codomain T</p>
 <p>Jadi hasilnya B’(-2, 4)</p>
 </section>
 <section id="e-reflection-about-the-origin">
-<h3>e. Reflection about the origin<a class="headerlink" href="#e-reflection-about-the-origin" title="Link to this heading">#</a></h3>
+<h4>e. Reflection about the origin<a class="headerlink" href="#e-reflection-about-the-origin" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Matriks
 <span class="math notranslate nohighlight">\(\begin{bmatrix}
@@ -757,6 +757,7 @@ W : codomain T</p>
 </section>
 </section>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -797,6 +798,15 @@ W : codomain T</p>
         <p class="prev-next-title">TRANSFORMASI MATRIKS</p>
       </div>
     </a>
+    <a class="right-next"
+       href="refleksi.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">REFLEKSI</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -813,33 +823,29 @@ W : codomain T</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TRANSFORMASI LINIER</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">PENGERTIAN</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-transformasi-linier">Apa Transformasi Linier??</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjumlahan-vektor">1. Penjumlahan Vektor :</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-skalar">2. Perkalian Skalar :</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-tranformasi-linier">1. membuktikan bahwa <span class="math notranslate nohighlight">\(T =(v1,v2)=(v1+v2,v1)\)</span> adalah tranformasi linier.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Penjumlahan Vektor :</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Perkalian skalar</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">TUGAS</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuktikan-bahwa-t-v1-v2-v1-v2-v1-adalah-tranformasi-linier">1. membuktikan bahwa <span class="math notranslate nohighlight">\(T =(v1,v2)=(v1+v2,v1)\)</span> adalah tranformasi linier.</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1. Penjumlahan Vektor :</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2. Perkalian skalar</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-2-contoh-titik-masing-masing">2. Buat 2 contoh titik masing-masing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-reflection-about-the-x-axis">a. Reflection about the x-axis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-reflection-about-the-y-axis">b. Reflection about the y-axis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-reflection-about-the-line-y-x">c. Reflection about the line y=x</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-reflection-about-the-line-y-x">d. Reflection about the line y = -x</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-reflection-about-the-origin">e. Reflection about the origin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#buat-2-contoh-titik-masing-masing">2. Buat 2 contoh titik masing-masing</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-reflection-about-the-x-axis">a. Reflection about the x-axis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-reflection-about-the-y-axis">b. Reflection about the y-axis</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-reflection-about-the-line-y-x">c. Reflection about the line y=x</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#d-reflection-about-the-line-y-x">d. Reflection about the line y = -x</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#e-reflection-about-the-origin">e. Reflection about the origin</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>

@@ -25,7 +25,7 @@ $$T(c.v)=c.T (v)$$
 
 Fungsi tersebut harus bersifat homogen, yang artinya mengalikan vektor dengan skalar yang akan menghasilkan hasil yang sama dengan mengalikan hasil fungsi tersebut dengan skalar yang sama.
 
-# TUGAS
+## TUGAS
 
 ### 1. membuktikan bahwa $T =(v1,v2)=(v1+v2,v1)$ adalah tranformasi linier.
 
