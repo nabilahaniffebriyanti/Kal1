@@ -370,17 +370,22 @@ Transformasi matriks  akan mengubah vektor  dan  menjadi vektor baru yang menjad
 Sebuah matriks A berfungsi seperti : 
 $A$ . $\vec{i}$ = kolom pertama, $A$ . $\vec{j}$ = kolom kedua
 karena  $A\vec{i}$ = (1, 2) dan $A\vec{j}$ = (2, 3)
+
 Maka:
 
 $$A = \begin{bmatrix} 1 & 2 \\ 2 & 3 \end{bmatrix}$$
 
 hasil : 
+
 vektor $\vec{x} = \begin{bmatrix} 1 & 1\end{bmatrix}$, yaitu titik ( 1,1 ): 
 
 $$A = \begin{bmatrix} 1 & 2 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} 1\\1 \end{bmatrix} = \begin{bmatrix} 1 + 2 \\ 2 + 3 \end{bmatrix} = \begin{bmatrix} 3\\5 \end{bmatrix}$$
 
 kesimpulan : 
-jadi : $$A = \begin{bmatrix} 1 & 2 \\ 2 & 3 \end{bmatrix}$$
+
+jadi : 
+
+$$A = \begin{bmatrix} 1 & 2 \\ 2 & 3 \end{bmatrix}$$
 
 ![Screenshot 2025-04-10 165940](https://hackmd.io/_uploads/S1uiLfrRkl.png)
 
@@ -398,10 +403,13 @@ Maka:
 $$A = \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}$$
 
 hasil : 
+
 vektor $\vec{x} = \begin{bmatrix} 1 & 1\end{bmatrix}$, yaitu titik ( 1,1 ): 
 
 $$A = \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} 1\\1 \end{bmatrix} = \begin{bmatrix} 1 + (-1) \\ 1 + 1 \end{bmatrix} = \begin{bmatrix} 0\\2 \end{bmatrix}$$
 
-kesimpulan : 
+kesimpulan :
+
 jadi : 
+
 $$A = \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}$$
