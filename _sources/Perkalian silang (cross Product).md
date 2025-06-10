@@ -282,6 +282,8 @@ $$= | 6 |$$
 
 $$= 6$$
 
+<iframe src="https://www.geogebra.org/material/iframe/id/kuxps2ca/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
+
 ### 3. Tentukan luas segitiga dengan titik-titik sudut (0, 0, 0), (1, 3, -1), dan (2, 1, 1). 
 
 Luas Segitiga di Ruang 3D
