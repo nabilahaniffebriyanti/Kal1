@@ -441,24 +441,28 @@ document.write(`
 <section id="kegunaan-svd">
 <h2>KEGUNAAN SVD<a class="headerlink" href="#kegunaan-svd" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Pengurangan Dimensi dan Kompresi Data:
-SVD memungkinkan untuk mengurangi dimensi data dengan memproyeksikan data ke ruang berdimensi lebih rendah, yang mengarah pada kompresi data.</p></li>
-<li><p>Analisis Data dan Ekstraksi Fitur:
-SVD dapat digunakan untuk mengekstrak fitur penting dari data, seperti komponen utama dalam analisis komponen utama (PCA).</p></li>
-<li><p>Analisis Komponen Utama (PCA):
-SVD adalah dasar dari Principal Component Analysis (PCA), metode analisis statistik yang digunakan untuk mengidentifikasi komponen-komponen utama dalam data yang menjelaskan sebagian besar variasi dalam data tersebut.</p></li>
+<li><p>Pengurangan Dimensi dan Kompresi Data:</p></li>
 </ol>
+<p>SVD memungkinkan untuk mengurangi dimensi data dengan memproyeksikan data ke ruang berdimensi lebih rendah, yang mengarah pada kompresi data.</p>
+<ol class="arabic simple" start="2">
+<li><p>Analisis Data dan Ekstraksi Fitur:</p></li>
+</ol>
+<p>SVD dapat digunakan untuk mengekstrak fitur penting dari data, seperti komponen utama dalam analisis komponen utama (PCA).</p>
+<ol class="arabic simple" start="3">
+<li><p>Analisis Komponen Utama (PCA):</p></li>
+</ol>
+<p>SVD adalah dasar dari Principal Component Analysis (PCA), metode analisis statistik yang digunakan untuk mengidentifikasi komponen-komponen utama dalam data yang menjelaskan sebagian besar variasi dalam data tersebut.</p>
 </section>
 <section id="bagaimana-formula">
 <h2>BAGAIMANA FORMULA?<a class="headerlink" href="#bagaimana-formula" title="Link to this heading">#</a></h2>
 <p>Rumus <strong>SVD</strong> (Singular Value Decomposition) dalam aljabar linear adalah :</p>
 <div class="math notranslate nohighlight">
 \[A = UΣV^T\]</div>
-<p>Di mana :
-<span class="math notranslate nohighlight">\(A \Rightarrow\)</span> adalah matriks asli yang ingin diuraikan.
-<span class="math notranslate nohighlight">\(U \Rightarrow\)</span> adalah matriks singular kiri, dengan kolom-kolomnya membentuk basis ortonormal untuk ruang kolom <span class="math notranslate nohighlight">\(A\)</span>.
-<span class="math notranslate nohighlight">\(Σ \Rightarrow\)</span> adalah matriks diagonal dengan nilai singular (akar kuadrat dari nilai eigen dari <span class="math notranslate nohighlight">\(A^T A\)</span> atau <span class="math notranslate nohighlight">\(AA^T\)</span>) di diagonal utamanya.
-<span class="math notranslate nohighlight">\(V^T \Rightarrow\)</span> adalah Transpose dari matriks singular kanan. Matriks <span class="math notranslate nohighlight">\(V\)</span> memiliki kolom-kolom yang membentuk basis ortonormal untuk ruang nol <span class="math notranslate nohighlight">\(A\)</span>.</p>
+<p>Di mana :</p>
+<p><span class="math notranslate nohighlight">\(A \Rightarrow\)</span> adalah matriks asli yang ingin diuraikan.</p>
+<p><span class="math notranslate nohighlight">\(U \Rightarrow\)</span> adalah matriks singular kiri, dengan kolom-kolomnya membentuk basis ortonormal untuk ruang kolom <span class="math notranslate nohighlight">\(A\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(Σ \Rightarrow\)</span> adalah matriks diagonal dengan nilai singular (akar kuadrat dari nilai eigen dari <span class="math notranslate nohighlight">\(A^T A\)</span> atau <span class="math notranslate nohighlight">\(AA^T\)</span>) di diagonal utamanya.</p>
+<p><span class="math notranslate nohighlight">\(V^T \Rightarrow\)</span> adalah Transpose dari matriks singular kanan. Matriks <span class="math notranslate nohighlight">\(V\)</span> memiliki kolom-kolom yang membentuk basis ortonormal untuk ruang nol <span class="math notranslate nohighlight">\(A\)</span>.</p>
 </section>
 <section id="langkah-langkah">
 <h2>LANGKAH-LANGKAH :<a class="headerlink" href="#langkah-langkah" title="Link to this heading">#</a></h2>
@@ -474,7 +478,7 @@ SVD adalah dasar dari Principal Component Analysis (PCA), metode analisis statis
 </section>
 <section id="contoh-1">
 <h2>CONTOH 1<a class="headerlink" href="#contoh-1" title="Link to this heading">#</a></h2>
-<p>Matriks : $<span class="math notranslate nohighlight">\(A = \begin{bmatrix} 3 &amp; 1 \\ 1 &amp; 3 \end{bmatrix}\)</span>$</p>
+<p>Matriks : <span class="math notranslate nohighlight">\(A = \begin{bmatrix} 3 &amp; 1 \\ 1 &amp; 3 \end{bmatrix}\)</span></p>
 <section id="mencari-transpose-matriks-a">
 <h3>Mencari Transpose matriks A<a class="headerlink" href="#mencari-transpose-matriks-a" title="Link to this heading">#</a></h3>
 <p>Transpose = baris jadi kolom :</p>
@@ -645,7 +649,7 @@ V = \begin{bmatrix}
 \[\begin{split} V = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 &amp; 1 \\ 1 &amp; -1 \end{bmatrix}\end{split}\]</div>
 <section id="karena-v-ortogonal">
 <h4>Karena <span class="math notranslate nohighlight">\(V\)</span> ortogonal<a class="headerlink" href="#karena-v-ortogonal" title="Link to this heading">#</a></h4>
-<p>jadi : $<span class="math notranslate nohighlight">\(V^T = V\)</span>$</p>
+<p>jadi : <span class="math notranslate nohighlight">\(V^T = V\)</span></p>
 </section>
 <section id="menghitung-u-t">
 <h4>Menghitung <span class="math notranslate nohighlight">\(UΣ^T\)</span><a class="headerlink" href="#menghitung-u-t" title="Link to this heading">#</a></h4>

@@ -20,10 +20,15 @@ $V \in \mathbb{R}^{n \times n}$ adalah matriks ortogonal, berisi vektor-vektor e
 ## KEGUNAAN SVD
 
 1. Pengurangan Dimensi dan Kompresi Data:
+
 SVD memungkinkan untuk mengurangi dimensi data dengan memproyeksikan data ke ruang berdimensi lebih rendah, yang mengarah pada kompresi data. 
+
 2. Analisis Data dan Ekstraksi Fitur:
+
 SVD dapat digunakan untuk mengekstrak fitur penting dari data, seperti komponen utama dalam analisis komponen utama (PCA).
+
 3. Analisis Komponen Utama (PCA):
+
 SVD adalah dasar dari Principal Component Analysis (PCA), metode analisis statistik yang digunakan untuk mengidentifikasi komponen-komponen utama dalam data yang menjelaskan sebagian besar variasi dalam data tersebut. 
 
 ## BAGAIMANA FORMULA? 
@@ -33,9 +38,13 @@ Rumus **SVD** (Singular Value Decomposition) dalam aljabar linear adalah :
 $$A = UΣV^T$$
 
 Di mana : 
+
 $A \Rightarrow$ adalah matriks asli yang ingin diuraikan.
+
 $U \Rightarrow$ adalah matriks singular kiri, dengan kolom-kolomnya membentuk basis ortonormal untuk ruang kolom $A$.
+
 $Σ \Rightarrow$ adalah matriks diagonal dengan nilai singular (akar kuadrat dari nilai eigen dari $A^T A$ atau $AA^T$) di diagonal utamanya.
+
 $V^T \Rightarrow$ adalah Transpose dari matriks singular kanan. Matriks $V$ memiliki kolom-kolom yang membentuk basis ortonormal untuk ruang nol $A$.
 
 ## LANGKAH-LANGKAH :  
@@ -56,7 +65,7 @@ $V^T \Rightarrow$ adalah Transpose dari matriks singular kanan. Matriks $V$ memi
 
 ## CONTOH 1
 
-Matriks : $$A = \begin{bmatrix} 3 & 1 \\ 1 & 3 \end{bmatrix}$$
+Matriks : $A = \begin{bmatrix} 3 & 1 \\ 1 & 3 \end{bmatrix}$
 
 #### Mencari Transpose matriks A
 Transpose = baris jadi kolom : 
@@ -229,7 +238,7 @@ $$ V = \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$$
 
 #### Karena $V$ ortogonal
 
-jadi : $$V^T = V$$
+jadi : $V^T = V$
 
 #### Menghitung $UΣ^T$
 
