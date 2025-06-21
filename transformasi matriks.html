@@ -187,12 +187,12 @@
 <li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">TRANSFORMASI MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">TRANSFORMASI LINIER</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Perkalian%20Titik%20%28Dot%20Product%29.html">Perkalian Titik (Dot Product)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Perkalian%20silang%20%28cross%20Product%29.html">Perkalian Silang (cross Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Singular%20Value%20Decomposition.html">SINGULAR VALUE DECOMPOSITION</a></li>
 </ul>
 
     </div>
@@ -405,6 +405,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-hasil-perkalian-matriks-dengan-vektor-vec-x-vec-y-a-vec-x-dan-a-vec-y-lalu-menggambar-keempat-vektor-pada-bidang-cartesius">Menghitung hasil perkalian matriks  dengan vektor <span class="math notranslate nohighlight">\(\vec{x}\)</span>, <span class="math notranslate nohighlight">\(\vec{y}\)</span>, <span class="math notranslate nohighlight">\(A\vec{x}\)</span>, dan <span class="math notranslate nohighlight">\(A\vec{y}\)</span>, lalu menggambar keempat vektor  pada bidang Cartesius.</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui">Diketahui :</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-penyelesaian">langkah-langkah penyelesaian :</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-vektor-a-vec-x">1. Menghitung vektor <span class="math notranslate nohighlight">\(A\vec{x}\)</span> :</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-vektor-a-vec-y">2. Menghitung vektor <span class="math notranslate nohighlight">\(A\vec{y}\)</span> :</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan :</a></li>
@@ -435,20 +436,21 @@ document.write(`
 <h1>TRANSFORMASI MATRIKS<a class="headerlink" href="#transformasi-matriks" title="Link to this heading">#</a></h1>
 <section id="pengertian">
 <h2>PENGERTIAN<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
-<p>Matriks Transformasi adalah matriks yang mengubah satu vektor menjadi vektor lain melalui proses perkalian matriks.</p>
+<p><strong>Matriks Transformasi</strong> adalah matriks yang mengubah satu vektor menjadi vektor lain melalui proses perkalian matriks.</p>
 <p>Matriks transformasi mengubah sistem kartesius dan memetakan koordinat vektor ke koordinat baru. Matriks transformasi T dengan orde ( mxn ) pada perkalian dengan vektor A dengan n komponen yang direpresentasikan sebagai matriks kolom mengubahnya menjadi matriks lain yang merepresentasikan vektor baru A’.</p>
 <p>Untuk ruang vektor dua dimensi, matriks transformasi berorde 2 x 2, dan untuk ruang n dimensi, matriks transformasi berorde (n x n).</p>
 <section id="a-perkalian-matriks-vektor">
 <h3>A. Perkalian Matriks-Vektor<a class="headerlink" href="#a-perkalian-matriks-vektor" title="Link to this heading">#</a></h3>
-<p>Perkalian Matriks-Vektor adalah operasi matematika di mana sebuah matriks dikalikan dengan sebuah vektor. Hasilnya adalah vektor baru.
-Secara matematis, jika Anda memiliki matriks (A) berukuran (<span class="math notranslate nohighlight">\(m \times n\)</span>) (m baris dan n kolom) dan vektor (x) dengan panjang (n), perkalian matriks-vektor (Ax) menghasilkan vektor baru (b) dengan panjang (m). Setiap elemen dalam vektor hasil adalah kombinasi linear dari elemen-elemen di vektor awal, berdasarkan baris matriks.</p>
+<p><strong>Perkalian Matriks-Vektor</strong> adalah operasi matematika di mana sebuah matriks dikalikan dengan sebuah vektor. Hasilnya adalah vektor baru.</p>
+<p>Secara matematis, jika Anda memiliki matriks (A) berukuran (<span class="math notranslate nohighlight">\(m \times n\)</span>) (m baris dan n kolom) dan vektor (x) dengan panjang (n), perkalian matriks-vektor (Ax) menghasilkan vektor baru (b) dengan panjang (m). Setiap elemen dalam vektor hasil adalah kombinasi linear dari elemen-elemen di vektor awal, berdasarkan baris matriks.</p>
 <section id="contoh-5-1-1-perkalian-vektor-dengan-matriks">
 <h4>Contoh 5.1.1 Perkalian vektor dengan matriks.<a class="headerlink" href="#contoh-5-1-1-perkalian-vektor-dengan-matriks" title="Link to this heading">#</a></h4>
 <p>Misalkan  A adalah sebuah matriks, dan y,z serta <span class="math notranslate nohighlight">\(\vec{x}\)</span>, dan  <span class="math notranslate nohighlight">\(\vec{y}\)</span> adalah vektor-vektor seperti yang diberikan di bawah ini.</p>
-<p>Diketahui : $<span class="math notranslate nohighlight">\(A = \begin{bmatrix} 1 &amp; 4 \\ 2 &amp; 3 \end{bmatrix}, \quad 
+<p>Diketahui :</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix} 1 &amp; 4 \\ 2 &amp; 3 \end{bmatrix}, \quad 
 \vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad 
 \vec{y} = \begin{bmatrix} -1 \\ 1 \end{bmatrix}, \quad 
-\vec{z} = \begin{bmatrix} 3 \\ -1 \end{bmatrix}\)</span>$</p>
+\vec{z} = \begin{bmatrix} 3 \\ -1 \end{bmatrix}\)</span></p>
 <p>Grafik <span class="math notranslate nohighlight">\(\vec{x}\)</span>, <span class="math notranslate nohighlight">\(\vec{y}\)</span>, <span class="math notranslate nohighlight">\(\vec{z}\)</span>, serta <span class="math notranslate nohighlight">\(A\vec{x}\)</span>, <span class="math notranslate nohighlight">\(A\vec{y}\)</span>, dan <span class="math notranslate nohighlight">\(A\vec{z}\)</span>.</p>
 <p>langkah-langkah:</p>
 <ol class="arabic simple">
@@ -700,7 +702,9 @@ mempertimbangkan <span class="math notranslate nohighlight">\(\vec{e_1} = \begin
 <section id="diketahui">
 <h5>Diketahui :<a class="headerlink" href="#diketahui" title="Link to this heading">#</a></h5>
 <p><span class="math notranslate nohighlight">\(A = \begin{bmatrix} 1 &amp; -1 \\ 2 &amp; 3 \end{bmatrix}\)</span>, <span class="math notranslate nohighlight">\(\quad \vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad \vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}\)</span></p>
-<p>langkah-langkah penyelesaian :</p>
+</section>
+<section id="langkah-langkah-penyelesaian">
+<h5>langkah-langkah penyelesaian :<a class="headerlink" href="#langkah-langkah-penyelesaian" title="Link to this heading">#</a></h5>
 </section>
 <section id="menghitung-vektor-a-vec-x">
 <h5>1. Menghitung vektor <span class="math notranslate nohighlight">\(A\vec{x}\)</span> :<a class="headerlink" href="#menghitung-vektor-a-vec-x" title="Link to this heading">#</a></h5>
@@ -902,6 +906,7 @@ karena  <span class="math notranslate nohighlight">\(A\vec{i}\)</span> = (1, 2) 
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-hasil-perkalian-matriks-dengan-vektor-vec-x-vec-y-a-vec-x-dan-a-vec-y-lalu-menggambar-keempat-vektor-pada-bidang-cartesius">Menghitung hasil perkalian matriks  dengan vektor <span class="math notranslate nohighlight">\(\vec{x}\)</span>, <span class="math notranslate nohighlight">\(\vec{y}\)</span>, <span class="math notranslate nohighlight">\(A\vec{x}\)</span>, dan <span class="math notranslate nohighlight">\(A\vec{y}\)</span>, lalu menggambar keempat vektor  pada bidang Cartesius.</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui">Diketahui :</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-penyelesaian">langkah-langkah penyelesaian :</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-vektor-a-vec-x">1. Menghitung vektor <span class="math notranslate nohighlight">\(A\vec{x}\)</span> :</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-vektor-a-vec-y">2. Menghitung vektor <span class="math notranslate nohighlight">\(A\vec{y}\)</span> :</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan :</a></li>

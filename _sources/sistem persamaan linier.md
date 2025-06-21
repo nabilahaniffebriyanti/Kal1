@@ -20,11 +20,21 @@ Solusi dengan Eliminasi :
 
 1. Jumlahkan kedua persamaan untuk menghilangkan y : 
 
-$(2x + y) + (3x - y) = 7 + 5 \quad \Rightarrow \quad 5x = 12  \quad \Rightarrow \quad x = \frac{12}{5}$
+$$(2x + y) + (3x - y) = 7 + 5 \quad \Rightarrow \quad$$ 
 
-2. Substitusi $x = \left(\frac{12}{5}\right)$ ke persamaan pertama:
+$$5x = 12  \quad \Rightarrow \quad x = \frac{12}{5}$$
 
-$2\left(\frac{12}{5}\right) + y = 7 \quad \Rightarrow \quad \frac{24}{5} + y = 7 \quad \Rightarrow \quad y = 7 - \frac{24}{5} \quad \Rightarrow \quad y = \frac{35}{5} - \frac{24}{5} \quad \Rightarrow \quad y = \frac{11}{5}$
+2. Substitusi $x = \left(\frac{12}{5}\right)$ ke persamaan pertama :
+
+$$2\left(\frac{12}{5}\right) + y = 7 $$
+
+$$\quad \Rightarrow \quad \frac{24}{5} + y = 7$$ 
+
+$$\quad \Rightarrow \quad y = 7 - \frac{24}{5} $$
+
+$$\quad \Rightarrow \quad y = \frac{35}{5} - \frac{24}{5} $$
+
+$$\quad \Rightarrow \quad y = \frac{11}{5}$$
 
 Solusi sistem persamaan ini adalah:
 
@@ -37,6 +47,7 @@ adalah kumpulan dari dua atau lebih persamaan yang tidak semuanya linier, yaitu 
 Berikut adalah contoh sistem persamaan non-linear:
 
 $\boxed {x^2 + y^2 = 25}$
+
 $\boxed {x + y = 7}$
 
 Penjelasan

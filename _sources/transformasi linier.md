@@ -10,6 +10,7 @@ title: transformasi linier
 Fungsi T yang memetakan ruang vektor V ke ruang vektor W.
 
 V : domain T
+
 W : codomain T 
 
 Dengan memenuhi dua sifat yaitu : 

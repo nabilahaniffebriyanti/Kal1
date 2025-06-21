@@ -105,7 +105,8 @@ $$\det(A) = ad - bc$$
 Jika , maka invers bisa dihitung.
 ### 6. TUGAS
  
-1. Buat persamaan 3 variabel dan hitunglah invers x yang hasilnya 1,0,0
+#### Buat persamaan 3 variabel dan hitunglah invers x yang hasilnya 1,0,0
+
 ### Penyelesaian
 #### 1. Bentuk persamaan 3 variabel
 $$2X_1 + X_2 + 3X_3 = 5$$

@@ -5,24 +5,27 @@ title: transformasi matriks
 
 # TRANSFORMASI MATRIKS
 ## PENGERTIAN
-Matriks Transformasi adalah matriks yang mengubah satu vektor menjadi vektor lain melalui proses perkalian matriks.
+**Matriks Transformasi** adalah matriks yang mengubah satu vektor menjadi vektor lain melalui proses perkalian matriks.
 
 Matriks transformasi mengubah sistem kartesius dan memetakan koordinat vektor ke koordinat baru. Matriks transformasi T dengan orde ( mxn ) pada perkalian dengan vektor A dengan n komponen yang direpresentasikan sebagai matriks kolom mengubahnya menjadi matriks lain yang merepresentasikan vektor baru A'.
 
 Untuk ruang vektor dua dimensi, matriks transformasi berorde 2 x 2, dan untuk ruang n dimensi, matriks transformasi berorde (n x n).
 
 ### A. Perkalian Matriks-Vektor
-Perkalian Matriks-Vektor adalah operasi matematika di mana sebuah matriks dikalikan dengan sebuah vektor. Hasilnya adalah vektor baru.
+**Perkalian Matriks-Vektor** adalah operasi matematika di mana sebuah matriks dikalikan dengan sebuah vektor. Hasilnya adalah vektor baru.
+
 Secara matematis, jika Anda memiliki matriks (A) berukuran ($m \times n$) (m baris dan n kolom) dan vektor (x) dengan panjang (n), perkalian matriks-vektor (Ax) menghasilkan vektor baru (b) dengan panjang (m). Setiap elemen dalam vektor hasil adalah kombinasi linear dari elemen-elemen di vektor awal, berdasarkan baris matriks.
 
 #### Contoh 5.1.1 Perkalian vektor dengan matriks.
 
 Misalkan  A adalah sebuah matriks, dan y,z serta $\vec{x}$, dan  $\vec{y}$ adalah vektor-vektor seperti yang diberikan di bawah ini.
 
-Diketahui : $$A = \begin{bmatrix} 1 & 4 \\ 2 & 3 \end{bmatrix}, \quad 
+Diketahui : 
+
+$A = \begin{bmatrix} 1 & 4 \\ 2 & 3 \end{bmatrix}, \quad 
 \vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad 
 \vec{y} = \begin{bmatrix} -1 \\ 1 \end{bmatrix}, \quad 
-\vec{z} = \begin{bmatrix} 3 \\ -1 \end{bmatrix}$$
+\vec{z} = \begin{bmatrix} 3 \\ -1 \end{bmatrix}$
 
 Grafik $\vec{x}$, $\vec{y}$, $\vec{z}$, serta $A\vec{x}$, $A\vec{y}$, dan $A\vec{z}$.
 
@@ -283,9 +286,10 @@ $$\vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}  dan \quad \vec{y} = \begin{bma
 1. $A = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix}$
 
 ##### Diketahui : 
+
 $A = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix}$, $\quad \vec{x} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad \vec{y} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}$
 
-langkah-langkah penyelesaian : 
+##### langkah-langkah penyelesaian : 
 ##### 1. Menghitung vektor $A\vec{x}$ :
 
 $A\vec{x} = 

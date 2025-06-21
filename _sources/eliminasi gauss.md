@@ -6,7 +6,7 @@ title: eliminasi gauss
 # ELIMINASI GAUSS
 ## PENGERTIAN
 ### METODE ELIMINASI
-Metode eliminasi adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.
+**Metode eliminasi** adalah salah satu metode yang digunakan untuk menyelesaikan soal persamaan linear dua atau tiga variable. Dimana metode eliminasi secara garis besar akan menghapus atau menghilangkan satu variabel dalam persamaan tersebut.
 
 ### ELIMINASI GAUSS
 Sistem persamaan linear yang di ubah menjadi bentuk matriks, matriks tersebut lalu diubah kebentuk Eselon Baris melalui Operasi Baris Elementer. Kemudian sistem diselesaikan dengan substitusi balik.
@@ -118,7 +118,8 @@ $$ x = 7, \quad y = -3, \quad z = 2$$
 
 ### Penjelasan Solusi atau Penyelesaian
 
-1. Satu Solusi Unik 
+#### 1. Satu Solusi Unik 
+
 Jika sistem persamaan memiliki satu solusi unik, maka sistem tersebut konsisten dan tidak bergantung. Setelah dilakukan eliminasi Gauss, matriks augmented akan memiliki bentuk segitiga atas, dan setiap variabel akan memiliki nilai tertentu setelah dilakukan substitusi balik.
 
 Contoh sistem yang memiliki satu solusi unik:
@@ -133,7 +134,8 @@ Setelah di lakukan penyelesaian menggunakan metode eliminasi Gauss, sistem ini m
 
 $$ x = 7, \quad y = -3, \quad z = 2$$
 
-2. Tidak Ada Solusi
+#### 2. Tidak Ada Solusi
+
 Jika sistem persamaan linear tidak memiliki solusi, maka sistem tersebut inkonsisten. Hal ini terjadi ketika selama eliminasi Gauss kita memperoleh sebuah baris yang berbentuk seperti 0=1 (atau bentuk lain), yang menunjukkan bahwa tidak ada solusi yang memenuhi sistem persamaan tersebut.
 
 Contoh sistem yang inkonsisten:
@@ -152,7 +154,8 @@ $$0𝑥 + 0𝑦 = 1$$
 
 Ini menunjukkan bahwa sistem tersebut tidak ada solusi.
 
-3. Tak Terhingga Banyak Solusi
+#### 3. Tak Terhingga Banyak Solusi
+
 Jika sistem persamaan memiliki lebih dari satu solusi, maka sistem tersebut konsisten dan bergantung. Ini terjadi ketika, setelah eliminasi Gauss, kita mendapatkan satu atau lebih baris yang semuanya nol (misalnya, 0=0 yang menunjukkan bahwa sistem tersebut memiliki tak terhingga banyak solusi.
 
 Contoh sistem yang memiliki tak terhingga banyak solusi:
