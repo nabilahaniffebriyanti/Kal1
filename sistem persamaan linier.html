@@ -186,6 +186,13 @@
 <li class="toctree-l1"><a class="reference internal" href="eliminasi%20gauss.html">ELIMINASI GAUSS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20matriks.html">TRANSFORMASI MATRIKS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">TRANSFORMASI LINIER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Perkalian%20Titik%20%28Dot%20Product%29.html">Perkalian Titik (Dot Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Perkalian%20silang%20%28cross%20Product%29.html">Perkalian Silang (cross Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Singular%20Value%20Decomposition.html">SINGULAR VALUE DECOMPOSITION</a></li>
 </ul>
 
     </div>
@@ -406,14 +413,16 @@ document.write(`
 <h3>Sistem persamaan linear<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.</p>
 <p>Berikut adalah contoh sistem persamaan linear :</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>2x + y = 7
-3x - y = 5
-</pre></div>
-</div>
+<div class="math notranslate nohighlight">
+\[2x + y = 7\]</div>
+<div class="math notranslate nohighlight">
+\[3x - y = 5\]</div>
 <p>Solusi dengan Eliminasi :</p>
 <ol class="arabic simple">
-<li><p>Jumlahkan kedua persamaan untuk menghilangkan y :
-<span class="math notranslate nohighlight">\((2x + y) + (3x - y) = 7 + 5 \quad \Rightarrow \quad 5x = 12  \quad \Rightarrow \quad x = \frac{12}{5}\)</span></p></li>
+<li><p>Jumlahkan kedua persamaan untuk menghilangkan y :</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\((2x + y) + (3x - y) = 7 + 5 \quad \Rightarrow \quad 5x = 12  \quad \Rightarrow \quad x = \frac{12}{5}\)</span></p>
+<ol class="arabic simple" start="2">
 <li><p>Substitusi <span class="math notranslate nohighlight">\(x = \left(\frac{12}{5}\right)\)</span> ke persamaan pertama:</p></li>
 </ol>
 <p><span class="math notranslate nohighlight">\(2\left(\frac{12}{5}\right) + y = 7 \quad \Rightarrow \quad \frac{24}{5} + y = 7 \quad \Rightarrow \quad y = 7 - \frac{24}{5} \quad \Rightarrow \quad y = \frac{35}{5} - \frac{24}{5} \quad \Rightarrow \quad y = \frac{11}{5}\)</span></p>
@@ -434,20 +443,34 @@ document.write(`
 <p>Untuk menyelesaikannya, kita bisa menggunakan substitusi atau eliminasi.</p>
 <p>Solusi dengan Substitusi</p>
 <p>Dari persamaan garis:</p>
-<p><span class="math notranslate nohighlight">\(y = 7 - x\)</span></p>
+<div class="math notranslate nohighlight">
+\[y = 7 - x\]</div>
 <p>Substitusi ke persamaan lingkaran:</p>
-<p><span class="math notranslate nohighlight">\(x^2 + (7 - x)^2 = 25\)</span></p>
-<p>Kembangkan:</p>
-<p><span class="math notranslate nohighlight">\(x^2 + (49 - 14x + x^2) = 25 \quad \Rightarrow \quad x^2 + 49 - 14x + x^2 = 25 \quad \Rightarrow \quad 2x^2 - 14x + 49 = 25 \quad \Rightarrow \quad 2x^2 - 14x + 24 = 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[x^2 + (7 - x)^2 = 25\]</div>
+<p>Kembangkan :</p>
+<div class="math notranslate nohighlight">
+\[x^2 + (49 - 14x + x^2) = 25\]</div>
+<div class="math notranslate nohighlight">
+\[\quad \Rightarrow \quad x^2 + 49 - 14x + x^2 = 25\]</div>
+<div class="math notranslate nohighlight">
+\[\quad \Rightarrow \quad 2x^2 - 14x + 49 = 25\]</div>
+<div class="math notranslate nohighlight">
+\[\quad \Rightarrow \quad 2x^2 - 14x + 24 = 0\]</div>
 <p>Bagi semuanya dengan 2:</p>
-<p><span class="math notranslate nohighlight">\(x^2 - 7x + 12 = 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[x^2 - 7x + 12 = 0\]</div>
 <p>Faktorkan :</p>
-<p><span class="math notranslate nohighlight">\((x - 3)(x - 4) = 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[(x - 3)(x - 4) = 0\]</div>
 <p>Sehingga menghasilkan :</p>
-<p><span class="math notranslate nohighlight">\(x = 3 \quad \text {atau} \quad x = 4\)</span></p>
+<div class="math notranslate nohighlight">
+\[x = 3 \quad \text {atau} \quad x = 4\]</div>
 <p>Substitusi kembali untuk mencari :</p>
-<p>Jika x = 3 , maka y = 7-3 = 4 → Solusi (3 , 4)
-Jika x = 4 , maka y = 7-4 = 3 → Solusi (4 , 3)</p>
+<p>Jika x = 3 , maka y = 7-3 = 4</p>
+<p>→ Solusi (3 , 4)</p>
+<p>Jika x = 4 , maka y = 7-4 = 3</p>
+<p>→ Solusi (4 , 3)</p>
 </section>
 </section>
 </section>

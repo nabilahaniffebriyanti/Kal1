@@ -12,12 +12,14 @@ Bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri 
 
 Berikut adalah contoh sistem persamaan linear :
 
-    2x + y = 7
-    3x - y = 5
+$$2x + y = 7$$
+
+$$3x - y = 5$$
 
 Solusi dengan Eliminasi : 
 
 1. Jumlahkan kedua persamaan untuk menghilangkan y : 
+
 $(2x + y) + (3x - y) = 7 + 5 \quad \Rightarrow \quad 5x = 12  \quad \Rightarrow \quad x = \frac{12}{5}$
 
 2. Substitusi $x = \left(\frac{12}{5}\right)$ ke persamaan pertama:
@@ -29,6 +31,7 @@ Solusi sistem persamaan ini adalah:
 $\boxed{x = \frac{12}{5}, \quad y = \frac{11}{5}}$
 
 ### Sistem persamaan non-linier 
+
 adalah kumpulan dari dua atau lebih persamaan yang tidak semuanya linier, yaitu mengandung pangkat variabel lebih dari satu, perkalian antar variabel.
 
 Berikut adalah contoh sistem persamaan non-linear:
@@ -47,29 +50,40 @@ Solusi dengan Substitusi
 
 Dari persamaan garis:
 
-$y = 7 - x$
+$$y = 7 - x$$
 
 Substitusi ke persamaan lingkaran:
 
-$x^2 + (7 - x)^2 = 25$
+$$x^2 + (7 - x)^2 = 25$$
 
-Kembangkan:
+Kembangkan :
 
-$x^2 + (49 - 14x + x^2) = 25 \quad \Rightarrow \quad x^2 + 49 - 14x + x^2 = 25 \quad \Rightarrow \quad 2x^2 - 14x + 49 = 25 \quad \Rightarrow \quad 2x^2 - 14x + 24 = 0$
+$$x^2 + (49 - 14x + x^2) = 25$$
+
+$$\quad \Rightarrow \quad x^2 + 49 - 14x + x^2 = 25$$
+
+$$\quad \Rightarrow \quad 2x^2 - 14x + 49 = 25$$ 
+
+$$\quad \Rightarrow \quad 2x^2 - 14x + 24 = 0$$
 
 Bagi semuanya dengan 2:
 
-$x^2 - 7x + 12 = 0$
+$$x^2 - 7x + 12 = 0$$
 
 Faktorkan :
 
-$(x - 3)(x - 4) = 0$
+$$(x - 3)(x - 4) = 0$$
 
 Sehingga menghasilkan :
 
-$x = 3 \quad \text {atau} \quad x = 4$
+$$x = 3 \quad \text {atau} \quad x = 4$$
 
 Substitusi kembali untuk mencari :
 
-Jika x = 3 , maka y = 7-3 = 4 → Solusi (3 , 4)
-Jika x = 4 , maka y = 7-4 = 3 → Solusi (4 , 3)
+Jika x = 3 , maka y = 7-3 = 4 
+
+→ Solusi (3 , 4)
+
+Jika x = 4 , maka y = 7-4 = 3 
+
+→ Solusi (4 , 3)
