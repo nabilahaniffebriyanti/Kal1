@@ -56,7 +56,7 @@ $$= -25$$
 
 jika hasil dari dua vektor tersebut -(minus) maka kedua vektor tersebut memiliki garis yang berlawanan arah dan memiliki sudut 180°
 
-<iframe src="https://www.geogebra.org/material/iframe/id/px9u4fkv/width/800/height/600border888888rc/false/ai/false/sdz/false/sfsb/true/stb/false"allowfullscreen>
+<iframe src="https://www.geogebra.org/material/iframe/id/px9u4fkv/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false"width="800" height="600" style="border:0px;">
 </iframe>
 
 #### CONTOH BASIS ADA 2 MACAM YAITU : 
