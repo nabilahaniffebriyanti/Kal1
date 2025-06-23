@@ -187,11 +187,12 @@
 <li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20matriks.html">TRANSFORMASI MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">TRANSFORMASI LINIER</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">EIGENVALUE &amp; EIGENVECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Perkalian%20Titik%20%28Dot%20Product%29.html">Perkalian Titik (Dot Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Perkalian%20silang%20%28cross%20Product%29.html">Perkalian Silang (cross Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Singular%20Value%20Decomposition.html">SINGULAR VALUE DECOMPOSITION</a></li>
 </ul>
 
     </div>
@@ -393,7 +394,12 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks-2x2">CONTOH PADA MATRIKS 2X2 :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-matriks-3x3">CONTOH MATRIKS 3X3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue">Mencari Eigenvalue</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvector">Mencari Eigenvector</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -530,8 +536,8 @@ Biasanya diambil nilai sederhana (misal salah satu komponen = 1 atau -1).</p></l
 </pre></div>
 </div>
 </section>
-<section id="contoh-pada-matriks">
-<h3>Contoh pada matriks :<a class="headerlink" href="#contoh-pada-matriks" title="Link to this heading">#</a></h3>
+<section id="contoh-pada-matriks-2x2">
+<h3>CONTOH PADA MATRIKS 2X2 :<a class="headerlink" href="#contoh-pada-matriks-2x2" title="Link to this heading">#</a></h3>
 <p>Cari eigenvalue dan eigenvector dari :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}A = \begin{pmatrix} 4 &amp; 2 \\ 1 &amp; 3 \end{pmatrix}\end{split}\]</div>
@@ -635,6 +641,162 @@ Ambil nilai sederhana, misal:</p>
 </pre></div>
 </div>
 </section>
+<section id="contoh-matriks-3x3">
+<h3>CONTOH MATRIKS 3X3<a class="headerlink" href="#contoh-matriks-3x3" title="Link to this heading">#</a></h3>
+<p>Diketahui matriks</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{pmatrix}
+5 &amp; 1 &amp; 1 \\
+1 &amp; 5 &amp; 1 \\
+1 &amp; 1 &amp; 5 \\
+\end{pmatrix}\end{split}\]</div>
+<section id="mencari-eigenvalue">
+<h4>Mencari Eigenvalue<a class="headerlink" href="#mencari-eigenvalue" title="Link to this heading">#</a></h4>
+<p>Penyelesaian :</p>
+<p>Gunakan persamaan :</p>
+<div class="math notranslate nohighlight">
+\[\det(A - \lambda I) = 0\]</div>
+<p>a) Bentuk <span class="math notranslate nohighlight">\(A - \lambda I\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A - \lambda I = \begin{pmatrix}
+5-\lambda &amp; 1 &amp; 1 \\
+1 &amp; 5-\lambda &amp; 1 \\
+1 &amp; 1 &amp; 5-\lambda \\
+\end{pmatrix}\end{split}\]</div>
+<p>b) Hitung Determinan :</p>
+<p>Gunakan rumus determinan matriks 3×3:</p>
+<div class="math notranslate nohighlight">
+\[\det(A-\lambda I) = (5-\lambda)\left[(5-\lambda)^2 - 1\right] - 1\left[1(5-\lambda) - 1\right] + 1\left[1 - 1(5-\lambda)\right]\]</div>
+<p>c) Hitung minor-minor-nya :</p>
+<div class="math notranslate nohighlight">
+\[= (5-\lambda)^2 - 1\]</div>
+<div class="math notranslate nohighlight">
+\[= (5-\lambda - 1)(5-\lambda + 1)\]</div>
+<div class="math notranslate nohighlight">
+\[= (4-\lambda)(6-\lambda)\]</div>
+<ul class="simple">
+<li><p>Minor untuk elemen ( 1, 2 )</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[1(5-\lambda) - 1 \]</div>
+<div class="math notranslate nohighlight">
+\[= (5-\lambda) - 1 \]</div>
+<div class="math notranslate nohighlight">
+\[= (4-\lambda)\]</div>
+<ul class="simple">
+<li><p>Minor untuk elemen ( 1, 3 )</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[1 - 1(5-\lambda) \]</div>
+<div class="math notranslate nohighlight">
+\[= (1-(5-\lambda)) \]</div>
+<div class="math notranslate nohighlight">
+\[= (\lambda-4)\]</div>
+<p>d) Masukkan ke rumus determinan :</p>
+<div class="math notranslate nohighlight">
+\[= (5-\lambda)(4-\lambda)(6-\lambda) - 1(4-\lambda) + 1(\lambda-4)\]</div>
+<p>Sederhanakan :</p>
+<div class="math notranslate nohighlight">
+\[(4-\lambda) - (4-\lambda) = 0\]</div>
+<p>Jadi determinannya :</p>
+<div class="math notranslate nohighlight">
+\[\det(A-\lambda I) = (5-\lambda)(4-\lambda)(6-\lambda)\]</div>
+<p>e) Hasil Eigenvalue :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = 4,\, 5,\, 6\]</div>
+</section>
+<section id="mencari-eigenvector">
+<h4>Mencari Eigenvector<a class="headerlink" href="#mencari-eigenvector" title="Link to this heading">#</a></h4>
+<p>Untuk masing-masing eigenvalue :</p>
+<p>Untuk <span class="math notranslate nohighlight">\(\lambda = 6\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A-6I = \begin{pmatrix}
+-1 &amp; 1 &amp; 1 \\
+1 &amp; -1 &amp; 1 \\
+1 &amp; 1 &amp; -1 \\
+\end{pmatrix}\end{split}\]</div>
+<p>hasil persamaannya :</p>
+<div class="math notranslate nohighlight">
+\[-1x + y + z = 0\]</div>
+<div class="math notranslate nohighlight">
+\[x - 1y + z = 0 \]</div>
+<div class="math notranslate nohighlight">
+\[x + y - 1z = 0\]</div>
+<p>Solusinya :</p>
+<p>Misal <span class="math notranslate nohighlight">\(x = 1\)</span></p>
+<ul class="simple">
+<li><p>Dari persamaan pertama :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[-1x + y + z = 0 \rightarrow y + z = 1\]</div>
+<ul class="simple">
+<li><p>Dari persamaan kedua :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[1-y + y + z = 0 \rightarrow z = y - 1\]</div>
+<p>Substitusikan :</p>
+<div class="math notranslate nohighlight">
+\[y + (y-1) = 1 \rightarrow 2y = 2 \rightarrow y=1\]</div>
+<div class="math notranslate nohighlight">
+\[z = 1-1=0\]</div>
+<p>Jadi :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}v_1 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\end{split}\]</div>
+<p>Untuk <span class="math notranslate nohighlight">\(\lambda = 5\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A-5I = \begin{pmatrix}
+0 &amp; 1 &amp; 1 \\
+1 &amp; 0 &amp; 1 \\
+1 &amp; 1 &amp; 0 \\
+\end{pmatrix}\end{split}\]</div>
+<p>hasil persamaannya :</p>
+<div class="math notranslate nohighlight">
+\[y + z = 0 \]</div>
+<div class="math notranslate nohighlight">
+\[x + z = 0 \]</div>
+<div class="math notranslate nohighlight">
+\[x + y = 0\]</div>
+<p>Solusinya :</p>
+<div class="math notranslate nohighlight">
+\[y = -z, x = -z, x=-y\]</div>
+<div class="math notranslate nohighlight">
+\[ x= y =z\]</div>
+<p>Misal <span class="math notranslate nohighlight">\(x=1, y =1, z=1\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}v_2 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}\end{split}\]</div>
+<p>Untuk <span class="math notranslate nohighlight">\(\lambda = 4\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A-4I = \begin{pmatrix}
+1 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 1 \\
+\end{pmatrix}\end{split}\]</div>
+<p>hasil persamaanya :</p>
+<div class="math notranslate nohighlight">
+\[x + y + z = 0\]</div>
+<p>Berarti, 2 bebas, 1 persamaan</p>
+<p>Misal:</p>
+<div class="math notranslate nohighlight">
+\[x = 1, y = -1, z=0\]</div>
+<p>atau</p>
+<div class="math notranslate nohighlight">
+\[x = 1, y = 0, z=-1\]</div>
+<p>jadi :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}v_3 = \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}\end{split}\]</div>
+<p>Hasil Akhir :</p>
+<p>Eigenvalue :</p>
+<div class="math notranslate nohighlight">
+\[\lambda = 4,\, 5,\, 6\]</div>
+<p>Eigenvector :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}v_1 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}v_2 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}v_3 = \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}\end{split}\]</div>
+</section>
+</section>
 </section>
 </section>
 
@@ -708,7 +870,12 @@ Ambil nilai sederhana, misal:</p>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">Contoh</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks">Contoh pada matriks :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-pada-matriks-2x2">CONTOH PADA MATRIKS 2X2 :</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-matriks-3x3">CONTOH MATRIKS 3X3</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvalue">Mencari Eigenvalue</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-eigenvector">Mencari Eigenvector</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

@@ -124,7 +124,7 @@ Eigenvectors (mengikuti eigenvalues):
  [ 0.70710678  0.70710678]]
 ```
 
-### Contoh pada matriks : 
+### CONTOH PADA MATRIKS 2X2 : 
 
 Cari eigenvalue dan eigenvector dari :
 
@@ -233,3 +233,184 @@ eigenvector :
 [[ 0.89442719 -0.70710678]
  [ 0.4472136   0.70710678]]
 ```
+
+### CONTOH MATRIKS 3X3
+
+Diketahui matriks
+
+$$A = \begin{pmatrix}
+5 & 1 & 1 \\
+1 & 5 & 1 \\
+1 & 1 & 5 \\
+\end{pmatrix}$$
+
+#### Mencari Eigenvalue
+
+Penyelesaian :
+
+Gunakan persamaan :
+
+$$\det(A - \lambda I) = 0$$
+
+a) Bentuk $A - \lambda I$
+
+$$A - \lambda I = \begin{pmatrix}
+5-\lambda & 1 & 1 \\
+1 & 5-\lambda & 1 \\
+1 & 1 & 5-\lambda \\
+\end{pmatrix}$$
+
+b) Hitung Determinan : 
+
+Gunakan rumus determinan matriks 3×3:
+
+$$\det(A-\lambda I) = (5-\lambda)\left[(5-\lambda)^2 - 1\right] - 1\left[1(5-\lambda) - 1\right] + 1\left[1 - 1(5-\lambda)\right]$$
+
+c) Hitung minor-minor-nya : 
+
+$$= (5-\lambda)^2 - 1$$
+
+$$= (5-\lambda - 1)(5-\lambda + 1)$$
+
+$$= (4-\lambda)(6-\lambda)$$
+
+- Minor untuk elemen ( 1, 2 )
+
+
+$$1(5-\lambda) - 1 $$
+
+$$= (5-\lambda) - 1 $$
+
+$$= (4-\lambda)$$
+
+- Minor untuk elemen ( 1, 3 )
+
+$$1 - 1(5-\lambda) $$
+
+$$= (1-(5-\lambda)) $$
+
+$$= (\lambda-4)$$
+
+d) Masukkan ke rumus determinan :
+
+$$= (5-\lambda)(4-\lambda)(6-\lambda) - 1(4-\lambda) + 1(\lambda-4)$$
+
+Sederhanakan :
+
+$$(4-\lambda) - (4-\lambda) = 0$$
+
+Jadi determinannya :
+
+$$\det(A-\lambda I) = (5-\lambda)(4-\lambda)(6-\lambda)$$
+
+e) Hasil Eigenvalue :
+
+$$\lambda = 4,\, 5,\, 6$$
+
+#### Mencari Eigenvector
+
+Untuk masing-masing eigenvalue :
+
+Untuk $\lambda = 6$
+
+$$A-6I = \begin{pmatrix}
+-1 & 1 & 1 \\
+1 & -1 & 1 \\
+1 & 1 & -1 \\
+\end{pmatrix}$$
+
+hasil persamaannya :
+
+$$-1x + y + z = 0$$
+
+$$x - 1y + z = 0 $$
+
+$$x + y - 1z = 0$$
+
+Solusinya :
+
+Misal $x = 1$
+
+- Dari persamaan pertama : 
+
+$$-1x + y + z = 0 \rightarrow y + z = 1$$
+
+- Dari persamaan kedua : 
+
+$$1-y + y + z = 0 \rightarrow z = y - 1$$
+
+Substitusikan :
+
+$$y + (y-1) = 1 \rightarrow 2y = 2 \rightarrow y=1$$
+
+$$z = 1-1=0$$
+
+Jadi :
+
+$$v_1 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$$
+
+Untuk $\lambda = 5$
+
+$$A-5I = \begin{pmatrix}
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0 \\
+\end{pmatrix}$$
+
+hasil persamaannya :
+
+$$y + z = 0 $$
+
+$$x + z = 0 $$
+
+$$x + y = 0$$
+
+Solusinya :
+
+$$y = -z, x = -z, x=-y$$
+
+$$ x= y =z$$
+
+Misal $x=1, y =1, z=1$
+
+$$v_2 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$$
+
+Untuk $\lambda = 4$
+
+$$A-4I = \begin{pmatrix}
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+1 & 1 & 1 \\
+\end{pmatrix}$$
+
+hasil persamaanya :
+
+$$x + y + z = 0$$
+
+Berarti, 2 bebas, 1 persamaan
+
+Misal:
+
+$$x = 1, y = -1, z=0$$
+
+atau
+
+$$x = 1, y = 0, z=-1$$
+
+jadi :
+
+$$v_3 = \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}$$
+
+Hasil Akhir :
+
+Eigenvalue :
+
+$$\lambda = 4,\, 5,\, 6$$
+
+Eigenvector :
+
+$$v_1 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$$
+
+$$v_2 = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$$
+
+$$v_3 = \begin{pmatrix} 1 \\ -1 \\ 0 \end{pmatrix}$$
