@@ -187,12 +187,12 @@
 <li class="toctree-l1"><a class="reference internal" href="aljabar%20matriks.html">ALJABAR  MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20matriks.html">TRANSFORMASI MATRIKS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transformasi%20linier.html">TRANSFORMASI LINIER</a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="refleksi.html">REFLEKSI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Eigenvalue%20%26%20Eigenvector.html">EIGENVALUE &amp; EIGENVECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Ortogonal%20dan%20Ortonormal.html">ORTOGONAL &amp; ORTONORMAL</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Perkalian Titik (Dot Product)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Perkalian%20silang%20%28cross%20Product%29.html">Perkalian Silang (cross Product)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Singular%20Value%20Decomposition.html">SINGULAR VALUE DECOMPOSITION</a></li>
 </ul>
 
     </div>
@@ -389,7 +389,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">CONTOH</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">CONTOH 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2">CONTOH 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-basis-ada-2-macam-yaitu">CONTOH BASIS ADA 2 MACAM YAITU :</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basis-2d-ada-2-yaitu">1. Basis 2D ada 2 yaitu :</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basis-3d-ada-3-yaitu">2. Basis 3D ada 3 yaitu :</a></li>
@@ -421,8 +422,8 @@ document.write(`
 <p>Perkalian titiknya (dot product) dari 2 vektor adalah:</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{v} \cdot \mathbf{w} = v_1 w_1 + v_2 w_2\]</div>
-<section id="contoh">
-<h3>CONTOH<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h3>
+<section id="contoh-1">
+<h3>CONTOH 1<a class="headerlink" href="#contoh-1" title="Link to this heading">#</a></h3>
 <p>Langkah pertama : menentukan dua vektor</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\mathbf{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}\end{split}\]</div>
@@ -438,6 +439,25 @@ document.write(`
 \[= 0\]</div>
 <p>jika hasil dari dua vektor tersebut 0 maka kedua vektor tersebut memiliki garis yang sejajar dan memiliki sudut 90°</p>
 <iframe src="https://www.geogebra.org/material/iframe/id/tnsb5s84/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
+</section>
+<section id="contoh-2">
+<h3>CONTOH 2<a class="headerlink" href="#contoh-2" title="Link to this heading">#</a></h3>
+<p>Langkah pertama : menentukan dua vektor</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{v} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}, \mathbf{w} = \begin{bmatrix} -3 \\ -4 \end{bmatrix}\end{split}\]</div>
+<p>Langkah kedua : hitung dot product</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec{v} . \vec{w} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
+\cdot \begin{bmatrix} -3 \\ 4 \end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[= 3 \times -3 + 4 \times -4\]</div>
+<div class="math notranslate nohighlight">
+\[= -9 - 16\]</div>
+<div class="math notranslate nohighlight">
+\[= -25\]</div>
+<p>jika hasil dari dua vektor tersebut -(minus) maka kedua vektor tersebut memiliki garis yang berlawanan arah dan memiliki sudut 180°</p>
+<iframe src="https://www.geogebra.org/material/iframe/id/px9u4fkv/width/800/height/600border888888rc/false/ai/false/sdz/false/sfsb/true/stb/false"allowfullscreen>
+</iframe>
 </section>
 <section id="contoh-basis-ada-2-macam-yaitu">
 <h3>CONTOH BASIS ADA 2 MACAM YAITU :<a class="headerlink" href="#contoh-basis-ada-2-macam-yaitu" title="Link to this heading">#</a></h3>
@@ -563,7 +583,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">CONTOH</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1">CONTOH 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2">CONTOH 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-basis-ada-2-macam-yaitu">CONTOH BASIS ADA 2 MACAM YAITU :</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basis-2d-ada-2-yaitu">1. Basis 2D ada 2 yaitu :</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#basis-3d-ada-3-yaitu">2. Basis 3D ada 3 yaitu :</a></li>

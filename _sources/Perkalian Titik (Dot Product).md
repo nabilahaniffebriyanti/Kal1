@@ -17,7 +17,7 @@ Perkalian titiknya (dot product) dari 2 vektor adalah:
 
 $$\mathbf{v} \cdot \mathbf{w} = v_1 w_1 + v_2 w_2$$
 
-#### CONTOH 
+#### CONTOH 1
 Langkah pertama : menentukan dua vektor 
 
 $$\mathbf{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \mathbf{w} = \begin{bmatrix} -1 \\ 2 \end{bmatrix}$$
@@ -36,6 +36,28 @@ $$= 0$$
 jika hasil dari dua vektor tersebut 0 maka kedua vektor tersebut memiliki garis yang sejajar dan memiliki sudut 90°
 
 <iframe src="https://www.geogebra.org/material/iframe/id/tnsb5s84/width/800/height/600/border/888888/rc/false/ai/true/sdz/true/smb/false/stb/false" width="800" height="600" style="border:0px;"> </iframe>
+
+#### CONTOH 2
+
+Langkah pertama : menentukan dua vektor 
+
+$$\mathbf{v} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}, \mathbf{w} = \begin{bmatrix} -3 \\ -4 \end{bmatrix}$$
+
+Langkah kedua : hitung dot product
+
+$$\vec{v} . \vec{w} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
+\cdot \begin{bmatrix} -3 \\ 4 \end{bmatrix}$$
+
+$$= 3 \times -3 + 4 \times -4$$ 
+
+$$= -9 - 16$$ 
+
+$$= -25$$
+
+jika hasil dari dua vektor tersebut -(minus) maka kedua vektor tersebut memiliki garis yang berlawanan arah dan memiliki sudut 180°
+
+<iframe src="https://www.geogebra.org/material/iframe/id/px9u4fkv/width/800/height/600border888888rc/false/ai/false/sdz/false/sfsb/true/stb/false"allowfullscreen>
+</iframe>
 
 #### CONTOH BASIS ADA 2 MACAM YAITU : 
 
